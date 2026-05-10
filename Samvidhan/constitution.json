@@ -1,0 +1,895 @@
+{
+  "constitution": {
+    "preamble": {
+      "title": "Preamble",
+      "description": "WE, THE PEOPLE OF INDIA, having solemnly resolved to constitute India into a SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC and to secure to all its citizens: JUSTICE, social, economic and political; LIBERTY of thought, expression, belief, faith and worship; EQUALITY of status and of opportunity; and to promote among them all FRATERNITY assuring the dignity of the individual and the unity and integrity of the Nation; IN OUR CONSTITUENT ASSEMBLY this twenty-sixth day of November, 1949, do HEREBY ADOPT, ENACT AND GIVE TO OURSELVES THIS CONSTITUTION",
+      "keywords": ["Sovereign", "Socialist", "Secular", "Democratic", "Republic", "Justice", "Liberty", "Equality", "Fraternity"]
+    },
+    "parts": [
+      {
+        "partId": 1,
+        "partNumber": "I",
+        "partTitle": "The Union and its Territory",
+        "articleRange": "Articles 1-4",
+        "articles": [
+          {
+            "articleId": 1,
+            "articleNumber": 1,
+            "title": "Name and territory of the Union",
+            "description": "(1) India, that is Bharat, shall be a Union of States.\n\n(2) The States and the territories thereof shall be as specified in the First Schedule.\n\n(3) The territory of India shall comprise —\n\n(a) the territories of the States;\n\n(b) the Union territories specified in the First Schedule; and\n\n(c) such other territories as may be acquired.",
+            "clauses": [
+              {
+                "clauseNumber": "1",
+                "text": "India, that is Bharat, shall be a Union of States."
+              },
+              {
+                "clauseNumber": "2",
+                "text": "The States and the territories thereof shall be as specified in the First Schedule."
+              },
+              {
+                "clauseNumber": "3",
+                "text": "The territory of India shall comprise —\n\n(a) the territories of the States;\n\n(b) the Union territories specified in the First Schedule; and\n\n(c) such other territories as may be acquired.",
+                "subClauses": [
+                  {
+                    "subClause": "a",
+                    "text": "the territories of the States"
+                  },
+                  {
+                    "subClause": "b",
+                    "text": "the Union territories specified in the First Schedule"
+                  },
+                  {
+                    "subClause": "c",
+                    "text": "such other territories as may be acquired"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "articleId": 2,
+            "articleNumber": 2,
+            "title": "Admission or establishment of new States",
+            "description": "Parliament may by law admit into the Union, or establish, new States on such terms and conditions as it thinks fit.",
+            "clauses": [
+              {
+                "clauseNumber": "1",
+                "text": "Parliament may by law admit into the Union, or establish, new States on such terms and conditions as it thinks fit."
+              }
+            ]
+          },
+          {
+            "articleId": 3,
+            "articleNumber": 3,
+            "title": "Formation of new States and alteration of areas, boundaries or names of existing States",
+            "description": "Parliament may by law—\n\n(a) form a new State by separation of territory from any State or by uniting two or more States or parts of States or by uniting any territory to a part of any State;\n\n(b) increase the area of any State;\n\n(c) diminish the area of any State;\n\n(d) alter the boundaries of any State;\n\n(e) alter the name of any State:\n\nProvided that no Bill for the purpose shall be introduced in either House of Parliament except on the recommendation of the President and unless, where the proposal contained in the Bill affects the area, boundaries or name of any of the States, the Bill has been referred by the President to the Legislature of that State for expressing its views thereon within such period as may be specified in the reference or within such further period as the President may allow and the period so specified or allowed has expired.\n\nExplanation I.—In this article, in clauses (a) to (e), \"State\" includes a Union territory, but in the proviso, \"State\" does not include a Union territory.\n\nExplanation II.—The power conferred on Parliament by clause (a) includes the power to form a new State or Union territory by uniting a part of any State or Union territory to any other State or Union territory.",
+            "clauses": [
+              {
+                "clauseNumber": "a",
+                "text": "form a new State by separation of territory from any State or by uniting two or more States or parts of States or by uniting any territory to a part of any State"
+              },
+              {
+                "clauseNumber": "b",
+                "text": "increase the area of any State"
+              },
+              {
+                "clauseNumber": "c",
+                "text": "diminish the area of any State"
+              },
+              {
+                "clauseNumber": "d",
+                "text": "alter the boundaries of any State"
+              },
+              {
+                "clauseNumber": "e",
+                "text": "alter the name of any State"
+              }
+            ],
+            "provisos": [
+              {
+                "text": "Provided that no Bill for the purpose shall be introduced in either House of Parliament except on the recommendation of the President and unless, where the proposal contained in the Bill affects the area, boundaries or name of any of the States, the Bill has been referred by the President to the Legislature of that State for expressing its views thereon within such period as may be specified in the reference or within such further period as the President may allow and the period so specified or allowed has expired."
+              }
+            ],
+            "explanations": [
+              {
+                "explanationNumber": "I",
+                "text": "In this article, in clauses (a) to (e), \"State\" includes a Union territory, but in the proviso, \"State\" does not include a Union territory."
+              },
+              {
+                "explanationNumber": "II",
+                "text": "The power conferred on Parliament by clause (a) includes the power to form a new State or Union territory by uniting a part of any State or Union territory to any other State or Union territory."
+              }
+            ]
+          },
+          {
+            "articleId": 4,
+            "articleNumber": 4,
+            "title": "Laws made under articles 2 and 3 to provide for the amendment of the First and the Fourth Schedules and supplemental, incidental and consequential matters",
+            "description": "(1) Any law referred to in article 2 or article 3 shall contain such provisions for the amendment of the First Schedule and the Fourth Schedule as may be necessary to give effect to the provisions of the law and may also contain such supplemental, incidental and consequential provisions (including provisions as to representation in Parliament and in the Legislature or Legislatures of the State or States affected by such law) as Parliament may deem necessary.\n\n(2) No such law as aforesaid shall be deemed to be an amendment of this Constitution for the purposes of article 368.",
+            "clauses": [
+              {
+                "clauseNumber": "1",
+                "text": "Any law referred to in article 2 or article 3 shall contain such provisions for the amendment of the First Schedule and the Fourth Schedule as may be necessary to give effect to the provisions of the law and may also contain such supplemental, incidental and consequential provisions (including provisions as to representation in Parliament and in the Legislature or Legislatures of the State or States affected by such law) as Parliament may deem necessary."
+              },
+              {
+                "clauseNumber": "2",
+                "text": "No such law as aforesaid shall be deemed to be an amendment of this Constitution for the purposes of article 368."
+              }
+            ]
+          }
+        ]
+      },
+      {
+          "partId": 2,
+          "partNumber": "II",
+          "partTitle": "Citizenship",
+          "articleRange": "Articles 5-11",
+          "articles": [
+              {
+                  "articleId": 5,
+                  "articleNumber": 5,
+                  "title": "Citizenship at the commencement of the Constitution",
+                  "description": "At the commencement of this Constitution, every person who has his domicile in the territory of India and —\n\n(a) who was born in the territory of India; or\n\n(b) either of whose parents was born in the territory of India; or\n\n(c) who has been ordinarily resident in the territory of India for not less than five years immediately preceding such commencement,\n\nshall be a citizen of India.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "a",
+                          "text": "who was born in the territory of India"
+                      },
+                      {
+                          "clauseNumber": "b",
+                          "text": "either of whose parents was born in the territory of India"
+                      },
+                      {
+                          "clauseNumber": "c",
+                          "text": "who has been ordinarily resident in the territory of India for not less than five years immediately preceding such commencement"
+                      }
+                  ]
+              },
+              {
+                  "articleId": 6,
+                  "articleNumber": 6,
+                  "title": "Rights of citizenship of certain persons who have migrated to India from Pakistan",
+                  "description": "Notwithstanding anything in article 5, a person who has migrated to the territory of India from the territory now included in Pakistan shall be deemed to be a citizen of India at the commencement of this Constitution if —\n\n(a) he or either of his parents or any of his grandparents was born in India as defined in the Government of India Act, 1935 (as originally enacted); and\n\n(b) (i) in the case where such person has so migrated before the nineteenth day of July, 1948, he has been ordinarily resident in the territory of India since the date of his migration, or\n\n(ii) in the case where such person has so migrated on or after the nineteenth day of July, 1948, he has been registered as a citizen of India by an officer appointed in that behalf by the Government of the Dominion of India on an application made by him therefor to such officer before the commencement of this Constitution in the form and manner prescribed by that Government:\n\nProvided that no person shall be so registered unless he has been resident in the territory of India for at least six months immediately preceding the date of his application.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "a",
+                          "text": "he or either of his parents or any of his grandparents was born in India as defined in the Government of India Act, 1935 (as originally enacted)"
+                      },
+                      {
+                          "clauseNumber": "b",
+                          "text": "(i) in the case where such person has so migrated before the nineteenth day of July, 1948, he has been ordinarily resident in the territory of India since the date of his migration, or\n\n(ii) in the case where such person has so migrated on or after the nineteenth day of July, 1948, he has been registered as a citizen of India",
+                          "subClauses": [
+                              {
+                                  "subClause": "i",
+                                  "text": "in the case where such person has so migrated before the nineteenth day of July, 1948, he has been ordinarily resident in the territory of India since the date of his migration"
+                              },
+                              {
+                                  "subClause": "ii",
+                                  "text": "in the case where such person has so migrated on or after the nineteenth day of July, 1948, he has been registered as a citizen of India by an officer appointed in that behalf by the Government of the Dominion of India on an application made by him therefor to such officer before the commencement of this Constitution in the form and manner prescribed by that Government"
+                              }
+                          ]
+                      }
+                  ],
+                  "provisos": [
+                      {
+                          "text": "Provided that no person shall be so registered unless he has been resident in the territory of India for at least six months immediately preceding the date of his application."
+                      }
+                  ]
+              },
+              {
+                  "articleId": 7,
+                  "articleNumber": 7,
+                  "title": "Rights of citizenship of certain migrants to Pakistan",
+                  "description": "Notwithstanding anything in articles 5 and 6, a person who has after the first day of March, 1947, migrated from the territory of India to the territory now included in Pakistan shall not be deemed to be a citizen of India:\n\nProvided that nothing in this article shall apply to a person who, after having so migrated to the territory now included in Pakistan, has returned to the territory of India under a permit for resettlement or permanent return issued by or under the authority of any law and every such person shall for the purposes of clause (b) of article 6 be deemed to have migrated to the territory of India after the nineteenth day of July, 1948.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "Notwithstanding anything in articles 5 and 6, a person who has after the first day of March, 1947, migrated from the territory of India to the territory now included in Pakistan shall not be deemed to be a citizen of India"
+                      }
+                  ],
+                  "provisos": [
+                      {
+                          "text": "Provided that nothing in this article shall apply to a person who, after having so migrated to the territory now included in Pakistan, has returned to the territory of India under a permit for resettlement or permanent return issued by or under the authority of any law and every such person shall for the purposes of clause (b) of article 6 be deemed to have migrated to the territory of India after the nineteenth day of July, 1948."
+                      }
+                  ]
+              },
+              {
+                  "articleId": 8,
+                  "articleNumber": 8,
+                  "title": "Rights of citizenship of certain persons of Indian origin residing outside India",
+                  "description": "Notwithstanding anything in article 5, any person who or either of whose parents or any of whose grandparents was born in India as defined in the Government of India Act, 1935 (as originally enacted), and who is ordinarily residing in any country outside India as so defined shall be deemed to be a citizen of India if he has been registered as a citizen of India by the diplomatic or consular representative of India in the country where he is for the time being residing on an application made by him therefor to such diplomatic or consular representative, whether before or after the commencement of this Constitution, in the form and manner prescribed by the Government of the Dominion of India or the Government of India",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "Notwithstanding anything in article 5, any person who or either of whose parents or any of whose grandparents was born in India as defined in the Government of India Act, 1935 (as originally enacted), and who is ordinarily residing in any country outside India as so defined shall be deemed to be a citizen of India if he has been registered as a citizen of India by the diplomatic or consular representative of India in the country where he is for the time being residing on an application made by him therefor to such diplomatic or consular representative, whether before or after the commencement of this Constitution, in the form and manner prescribed by the Government of the Dominion of India or the Government of India"
+                      }
+                  ]
+              },
+              {
+                  "articleId": 9,
+                  "articleNumber": 9,
+                  "title": "Persons voluntarily acquiring citizenship of a foreign State not to be citizens",
+                  "description": "No person shall be a citizen of India by virtue of article 5, or be deemed to be a citizen of India by virtue of article 6 or article 8, if he has voluntarily acquired the citizenship of any foreign State.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "No person shall be a citizen of India by virtue of article 5, or be deemed to be a citizen of India by virtue of article 6 or article 8, if he has voluntarily acquired the citizenship of any foreign State."
+                      }
+                  ]
+              },
+              {
+                  "articleId": 10,
+                  "articleNumber": 10,
+                  "title": "Continuance of the rights of citizenship",
+                  "description": "Every person who is or is deemed to be a citizen of India under any of the foregoing provisions of this Part shall, subject to the provisions of any law that may be made by Parliament, continue to be such citizen.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "Every person who is or is deemed to be a citizen of India under any of the foregoing provisions of this Part shall, subject to the provisions of any law that may be made by Parliament, continue to be such citizen."
+                      }
+                  ]
+              },
+              {
+                  "articleId": 11,
+                  "articleNumber": 11,
+                  "title": "Parliament to regulate the right of citizenship by law",
+                  "description": "Nothing in the foregoing provisions of this Part shall derogate from the power of Parliament to make any provision with respect to the acquisition and termination of citizenship and all other matters relating to citizenship.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "Nothing in the foregoing provisions of this Part shall derogate from the power of Parliament to make any provision with respect to the acquisition and termination of citizenship and all other matters relating to citizenship."
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "partId": 3,
+          "partNumber": "III",
+          "partTitle": "Fundamental Rights",
+          "articleRange": "Articles 12-35",
+          "articles": [
+              {
+                  "articleId": 12,
+                  "articleNumber": 12,
+                  "title": "Definition",
+                  "description": "In this Part, unless the context otherwise requires, \"the State\" includes the Government and Parliament of India and the Government and the Legislature of each of the States and all local or other authorities within the territory of India or under the control of the Government of India.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "In this Part, unless the context otherwise requires, \"the State\" includes the Government and Parliament of India and the Government and the Legislature of each of the States and all local or other authorities within the territory of India or under the control of the Government of India."
+                      }
+                  ]
+              },
+              {
+                  "articleId": 13,
+                  "articleNumber": 13,
+                  "title": "Laws inconsistent with or in derogation of the fundamental rights",
+                  "description": "(1) All laws in force in the territory of India immediately before the commencement of this Constitution, in so far as they are inconsistent with the provisions of this Part, shall, to the extent of such inconsistency, be void.\n\n(2) The State shall not make any law which takes away or abridges the rights conferred by this Part and any law made in contravention of this clause shall, to the extent of the contravention, be void.\n\n(3) In this article, unless the context otherwise requires, —\n(a) \"law\" includes any Ordinance, order, bye-law, rule, regulation, notification, custom or usage having in the territory of India the force of law;\n(b) \"laws in force\" includes laws passed or made by a Legislature or other competent authority in the territory of India before the commencement of this Constitution and not previously repealed, notwithstanding that any such law or any part thereof may not be then in operation either at all or in particular areas.\n\n(4) Nothing in this article shall apply to any amendment of this Constitution made under article 368.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "All laws in force in the territory of India immediately before the commencement of this Constitution, in so far as they are inconsistent with the provisions of this Part, shall, to the extent of such inconsistency, be void."
+                      },
+                      {
+                          "clauseNumber": "2",
+                          "text": "The State shall not make any law which takes away or abridges the rights conferred by this Part and any law made in contravention of this clause shall, to the extent of the contravention, be void."
+                      },
+                      {
+                          "clauseNumber": "3",
+                          "text": "In this article, unless the context otherwise requires, —\n(a) \"law\" includes any Ordinance, order, bye-law, rule, regulation, notification, custom or usage having in the territory of India the force of law;\n(b) \"laws in force\" includes laws passed or made by a Legislature or other competent authority in the territory of India before the commencement of this Constitution and not previously repealed, notwithstanding that any such law or any part thereof may not be then in operation either at all or in particular areas.",
+                          "subClauses": [
+                              {
+                                  "subClause": "a",
+                                  "text": "\"law\" includes any Ordinance, order, bye-law, rule, regulation, notification, custom or usage having in the territory of India the force of law"
+                              },
+                              {
+                                  "subClause": "b",
+                                  "text": "\"laws in force\" includes laws passed or made by a Legislature or other competent authority in the territory of India before the commencement of this Constitution and not previously repealed, notwithstanding that any such law or any part thereof may not be then in operation either at all or in particular areas"
+                              }
+                          ]
+                      },
+                      {
+                          "clauseNumber": "4",
+                          "text": "Nothing in this article shall apply to any amendment of this Constitution made under article 368."
+                      }
+                  ]
+              },
+              {
+                  "articleId": 14,
+                  "articleNumber": 14,
+                  "title": "Equality before law",
+                  "description": "The State shall not deny to any person equality before the law or the equal protection of the laws within the territory of India.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "The State shall not deny to any person equality before the law or the equal protection of the laws within the territory of India."
+                      }
+                  ]
+              },
+              {
+                  "articleId": 15,
+                  "articleNumber": 15,
+                  "title": "Prohibition of discrimination on grounds of religion, race, caste, sex or place of birth",
+                  "description": "(1) The State shall not discriminate against any citizen on grounds only of religion, race, caste, sex, place of birth or any of them.\n\n(2) No citizen shall, on grounds only of religion, race, caste, sex, place of birth or any of them, be subject to any disability, liability, restriction or condition with regard to—\n(a) access to shops, public restaurants, hotels and places of public entertainment; or\n(b) the use of wells, tanks, bathing ghats, roads and places of public resort maintained wholly or partly out of State funds or dedicated to the use of the general public.\n\n(3) Nothing in this article shall prevent the State from making any special provision for women and children.\n\n(4) Nothing in this article or in clause (2) of article 29 shall prevent the State from making any special provision for the advancement of any socially and educationally backward classes of citizens or for the Scheduled Castes and the Scheduled Tribes.\n\n(5) Nothing in this article or in sub-clause (g) of clause (1) of article 19 shall prevent the State from making any special provision, by law, for the advancement of any socially and educationally backward classes of citizens or for the Scheduled Castes or the Scheduled Tribes in so far as such special provisions relate to their admission to educational institutions including private educational institutions, whether aided or unaided by the State, other than the minority educational institutions referred to in clause (1) of article 30.\n\n(6) Nothing in this article or sub-clause (g) of clause (1) of article 19 or clause (2) of article 29 shall prevent the State from making,—\n(a) any special provision for the advancement of any economically weaker sections of citizens other than the classes mentioned in clauses (4) and (5); and\n(b) any special provision for the advancement of any economically weaker sections of citizens other than the classes mentioned in clauses (4) and (5) in so far as such special provisions relate to their admission to educational institutions including private educational institutions, whether aided or unaided by the State, other than the minority educational institutions referred to in clause (1) of article 30, which in the case of reservation would be in addition to the existing reservations and subject to a maximum of ten per cent. of the total seats in each category.\n\nExplanation.—For the purposes of this article and article 16, \"economically weaker sections\" shall be such as may be notified by the State from time to time on the basis of family income and other indicators of economic disadvantage.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "The State shall not discriminate against any citizen on grounds only of religion, race, caste, sex, place of birth or any of them."
+                      },
+                      {
+                          "clauseNumber": "2",
+                          "text": "No citizen shall, on grounds only of religion, race, caste, sex, place of birth or any of them, be subject to any disability, liability, restriction or condition with regard to—\n(a) access to shops, public restaurants, hotels and places of public entertainment; or\n(b) the use of wells, tanks, bathing ghats, roads and places of public resort maintained wholly or partly out of State funds or dedicated to the use of the general public.",
+                          "subClauses": [
+                              {
+                                  "subClause": "a",
+                                  "text": "access to shops, public restaurants, hotels and places of public entertainment"
+                              },
+                              {
+                                  "subClause": "b",
+                                  "text": "the use of wells, tanks, bathing ghats, roads and places of public resort maintained wholly or partly out of State funds or dedicated to the use of the general public"
+                              }
+                          ]
+                      },
+                      {
+                          "clauseNumber": "3",
+                          "text": "Nothing in this article shall prevent the State from making any special provision for women and children."
+                      },
+                      {
+                          "clauseNumber": "4",
+                          "text": "Nothing in this article or in clause (2) of article 29 shall prevent the State from making any special provision for the advancement of any socially and educationally backward classes of citizens or for the Scheduled Castes and the Scheduled Tribes."
+                      },
+                      {
+                          "clauseNumber": "5",
+                          "text": "Nothing in this article or in sub-clause (g) of clause (1) of article 19 shall prevent the State from making any special provision, by law, for the advancement of any socially and educationally backward classes of citizens or for the Scheduled Castes or the Scheduled Tribes in so far as such special provisions relate to their admission to educational institutions including private educational institutions, whether aided or unaided by the State, other than the minority educational institutions referred to in clause (1) of article 30."
+                      },
+                      {
+                          "clauseNumber": "6",
+                          "text": "Nothing in this article or sub-clause (g) of clause (1) of article 19 or clause (2) of article 29 shall prevent the State from making,—\n(a) any special provision for the advancement of any economically weaker sections of citizens other than the classes mentioned in clauses (4) and (5); and\n(b) any special provision for the advancement of any economically weaker sections of citizens other than the classes mentioned in clauses (4) and (5) in so far as such special provisions relate to their admission to educational institutions including private educational institutions, whether aided or unaided by the State, other than the minority educational institutions referred to in clause (1) of article 30, which in the case of reservation would be in addition to the existing reservations and subject to a maximum of ten per cent. of the total seats in each category.",
+                          "subClauses": [
+                              {
+                                  "subClause": "a",
+                                  "text": "any special provision for the advancement of any economically weaker sections of citizens other than the classes mentioned in clauses (4) and (5)"
+                              },
+                              {
+                                  "subClause": "b",
+                                  "text": "any special provision for the advancement of any economically weaker sections of citizens other than the classes mentioned in clauses (4) and (5) in so far as such special provisions relate to their admission to educational institutions including private educational institutions, whether aided or unaided by the State, other than the minority educational institutions referred to in clause (1) of article 30, which in the case of reservation would be in addition to the existing reservations and subject to a maximum of ten per cent. of the total seats in each category"
+                              }
+                          ]
+                      }
+                  ],
+                  "explanations": [
+                      {
+                          "explanationNumber": "1",
+                          "text": "For the purposes of this article and article 16, \"economically weaker sections\" shall be such as may be notified by the State from time to time on the basis of family income and other indicators of economic disadvantage."
+                      }
+                  ]
+              },
+              {
+                  "articleId": 16,
+                  "articleNumber": 16,
+                  "title": "Equality of opportunity in matters of public employment",
+                  "description": "(1) There shall be equality of opportunity for all citizens in matters relating to employment or appointment to any office under the State.\n\n(2) No citizen shall, on grounds only of religion, race, caste, sex, descent, place of birth, residence or any of them, be ineligible for, or discriminated against in respect of, any employment or office under the State.\n\n(3) Nothing in this article shall prevent Parliament from making any law prescribing, in regard to a class or classes of employment or appointment to an office under the Government of, or any local or other authority within, a State or Union territory, any requirement as to residence within that State or Union territory prior to such employment or appointment.\n\n(4) Nothing in this article shall prevent the State from making any provision for the reservation of appointments or posts in favour of any backward class of citizens which, in the opinion of the State, is not adequately represented in the services under the State.\n\n(4A) Nothing in this article shall prevent the State from making any provision for reservation in matters of promotion, with consequential seniority, to any class or classes of posts in the services under the State in favour of the Scheduled Castes and the Scheduled Tribes which, in the opinion of the State, are not adequately represented in the services under the State.\n\n(4B) Nothing in this article shall prevent the State from considering any unfilled vacancies of a year which are reserved for being filled up in that year in accordance with any provision for reservation made under clause (4) or clause (4A) as a separate class of vacancies to be filled up in any succeeding year or years and such class of vacancies shall not be considered together with the vacancies of the year in which they are being filled up for determining the ceiling of fifty per cent. reservation on total number of vacancies of that year.\n\n(5) Nothing in this article shall affect the operation of any law which provides that the incumbent of an office in connection with the affairs of any religious or denominational institution or any member of the governing body thereof shall be a person professing a particular religion or belonging to a particular denomination.\n\n(6) Nothing in this article shall prevent the State from making any provision for the reservation of appointments or posts in favour of any economically weaker sections of citizens other than the classes mentioned in clause (4), in addition to the existing reservation and subject to a maximum of ten per cent. of the posts in each category.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "There shall be equality of opportunity for all citizens in matters relating to employment or appointment to any office under the State."
+                      },
+                      {
+                          "clauseNumber": "2",
+                          "text": "No citizen shall, on grounds only of religion, race, caste, sex, descent, place of birth, residence or any of them, be ineligible for, or discriminated against in respect of, any employment or office under the State."
+                      },
+                      {
+                          "clauseNumber": "3",
+                          "text": "Nothing in this article shall prevent Parliament from making any law prescribing, in regard to a class or classes of employment or appointment to an office under the Government of, or any local or other authority within, a State or Union territory, any requirement as to residence within that State or Union territory prior to such employment or appointment."
+                      },
+                      {
+                          "clauseNumber": "4",
+                          "text": "Nothing in this article shall prevent the State from making any provision for the reservation of appointments or posts in favour of any backward class of citizens which, in the opinion of the State, is not adequately represented in the services under the State."
+                      },
+                      {
+                          "clauseNumber": "4A",
+                          "text": "Nothing in this article shall prevent the State from making any provision for reservation in matters of promotion, with consequential seniority, to any class or classes of posts in the services under the State in favour of the Scheduled Castes and the Scheduled Tribes which, in the opinion of the State, are not adequately represented in the services under the State."
+                      },
+                      {
+                          "clauseNumber": "4B",
+                          "text": "Nothing in this article shall prevent the State from considering any unfilled vacancies of a year which are reserved for being filled up in that year in accordance with any provision for reservation made under clause (4) or clause (4A) as a separate class of vacancies to be filled up in any succeeding year or years and such class of vacancies shall not be considered together with the vacancies of the year in which they are being filled up for determining the ceiling of fifty per cent. reservation on total number of vacancies of that year."
+                      },
+                      {
+                          "clauseNumber": "5",
+                          "text": "Nothing in this article shall affect the operation of any law which provides that the incumbent of an office in connection with the affairs of any religious or denominational institution or any member of the governing body thereof shall be a person professing a particular religion or belonging to a particular denomination."
+                      },
+                      {
+                          "clauseNumber": "6",
+                          "text": "Nothing in this article shall prevent the State from making any provision for the reservation of appointments or posts in favour of any economically weaker sections of citizens other than the classes mentioned in clause (4), in addition to the existing reservation and subject to a maximum of ten per cent. of the posts in each category."
+                      }
+                  ]
+              },
+              {
+                  "articleId": 17,
+                  "articleNumber": 17,
+                  "title": "Abolition of Untouchability",
+                  "description": "\"Untouchability\" is abolished and its practice in any form is forbidden. The enforcement of any disability arising out of \"Untouchability\" shall be an offence punishable in accordance with law.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "\"Untouchability\" is abolished and its practice in any form is forbidden. The enforcement of any disability arising out of \"Untouchability\" shall be an offence punishable in accordance with law."
+                      }
+                  ]
+              },
+              {
+                  "articleId": 18,
+                  "articleNumber": 18,
+                  "title": "Abolition of titles",
+                  "description": "(1) No title, not being a military or academic distinction, shall be conferred by the State.\n\n(2) No citizen of India shall accept any title from any foreign State.\n\n(3) No person who is not a citizen of India shall, while he holds any office of profit or trust under the State, accept without the consent of the President any title from any foreign State.\n\n(4) No person holding any office of profit or trust under the State shall, without the consent of the President, accept any present, emolument, or office of any kind from or under any foreign State.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "No title, not being a military or academic distinction, shall be conferred by the State."
+                      },
+                      {
+                          "clauseNumber": "2",
+                          "text": "No citizen of India shall accept any title from any foreign State."
+                      },
+                      {
+                          "clauseNumber": "3",
+                          "text": "No person who is not a citizen of India shall, while he holds any office of profit or trust under the State, accept without the consent of the President any title from any foreign State."
+                      },
+                      {
+                          "clauseNumber": "4",
+                          "text": "No person holding any office of profit or trust under the State shall, without the consent of the President, accept any present, emolument, or office of any kind from or under any foreign State."
+                      }
+                  ]
+              },
+              {
+                  "articleId": 19,
+                  "articleNumber": 19,
+                  "title": "Protection of certain rights regarding freedom of speech, etc",
+                  "description": "(1) All citizens shall have the right—\n(a) to freedom of speech and expression;\n(b) to assemble peaceably and without arms;\n(c) to form associations or unions;\n(d) to move freely throughout the territory of India;\n(e) to reside and settle in any part of the territory of India;\n(g) to practise any profession, or to carry on any occupation, trade or business.\n\n(2) Nothing in sub-clause (a) of clause (1) shall affect the operation of any existing law, or prevent the State from making any law, in so far as such law imposes reasonable restrictions on the exercise of the right conferred by the said sub-clause in the interests of the sovereignty and integrity of India, the security of the State, friendly relations with foreign States, public order, decency or morality, or in relation to contempt of court, defamation or incitement to an offence.\n\n(3) Nothing in sub-clause (b) of the said clause shall affect the operation of any existing law in so far as it imposes, or prevent the State from making any law imposing, in the interests of the sovereignty and integrity of India or public order, reasonable restrictions on the exercise of the right conferred by the said sub-clause.\n\n(4) Nothing in sub-clause (c) of the said clause shall affect the operation of any existing law in so far as it imposes, or prevent the State from making any law imposing, in the interests of the sovereignty and integrity of India or public order or morality, reasonable restrictions on the exercise of the right conferred by the said sub-clause.\n\n(5) Nothing in sub-clauses (d) and (e) of the said clause shall affect the operation of any existing law in so far as it imposes, or prevent the State from making any law imposing, reasonable restrictions on the exercise of any of the rights conferred by the said sub-clauses either in the interests of the general public or for the protection of the interests of any Scheduled Tribe.\n\n(6) Nothing in sub-clause (g) of the said clause shall affect the operation of any existing law in so far as it imposes, or prevent the State from making any law imposing, in the interests of the general public, reasonable restrictions on the exercise of the right conferred by the said sub-clause, and, in particular, nothing in the said sub-clause shall affect the operation of any existing law in so far as it relates to, or prevent the State from making any law relating to,—\n(i) the professional or technical qualifications necessary for practising any profession or carrying on any occupation, trade or business, or\n(ii) the carrying on by the State, or by a corporation owned or controlled by the State, of any trade, business, industry or service, whether to the exclusion, complete or partial, of citizens or otherwise.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "All citizens shall have the right—\n(a) to freedom of speech and expression;\n(b) to assemble peaceably and without arms;\n(c) to form associations or unions;\n(d) to move freely throughout the territory of India;\n(e) to reside and settle in any part of the territory of India;\n(g) to practise any profession, or to carry on any occupation, trade or business.",
+                          "subClauses": [
+                              {
+                                  "subClause": "a",
+                                  "text": "to freedom of speech and expression"
+                              },
+                              {
+                                  "subClause": "b",
+                                  "text": "to assemble peaceably and without arms"
+                              },
+                              {
+                                  "subClause": "c",
+                                  "text": "to form associations or unions"
+                              },
+                              {
+                                  "subClause": "d",
+                                  "text": "to move freely throughout the territory of India"
+                              },
+                              {
+                                  "subClause": "e",
+                                  "text": "to reside and settle in any part of the territory of India"
+                              },
+                              {
+                                  "subClause": "g",
+                                  "text": "to practise any profession, or to carry on any occupation, trade or business"
+                              }
+                          ]
+                      },
+                      {
+                          "clauseNumber": "2",
+                          "text": "Nothing in sub-clause (a) of clause (1) shall affect the operation of any existing law, or prevent the State from making any law, in so far as such law imposes reasonable restrictions on the exercise of the right conferred by the said sub-clause in the interests of the sovereignty and integrity of India, the security of the State, friendly relations with foreign States, public order, decency or morality, or in relation to contempt of court, defamation or incitement to an offence."
+                      },
+                      {
+                          "clauseNumber": "3",
+                          "text": "Nothing in sub-clause (b) of the said clause shall affect the operation of any existing law in so far as it imposes, or prevent the State from making any law imposing, in the interests of the sovereignty and integrity of India or public order, reasonable restrictions on the exercise of the right conferred by the said sub-clause."
+                      },
+                      {
+                          "clauseNumber": "4",
+                          "text": "Nothing in sub-clause (c) of the said clause shall affect the operation of any existing law in so far as it imposes, or prevent the State from making any law imposing, in the interests of the sovereignty and integrity of India or public order or morality, reasonable restrictions on the exercise of the right conferred by the said sub-clause."
+                      },
+                      {
+                          "clauseNumber": "5",
+                          "text": "Nothing in sub-clauses (d) and (e) of the said clause shall affect the operation of any existing law in so far as it imposes, or prevent the State from making any law imposing, reasonable restrictions on the exercise of any of the rights conferred by the said sub-clauses either in the interests of the general public or for the protection of the interests of any Scheduled Tribe."
+                      },
+                      {
+                          "clauseNumber": "6",
+                          "text": "Nothing in sub-clause (g) of the said clause shall affect the operation of any existing law in so far as it imposes, or prevent the State from making any law imposing, in the interests of the general public, reasonable restrictions on the exercise of the right conferred by the said sub-clause, and, in particular, nothing in the said sub-clause shall affect the operation of any existing law in so far as it relates to, or prevent the State from making any law relating to,—\n(i) the professional or technical qualifications necessary for practising any profession or carrying on any occupation, trade or business, or\n(ii) the carrying on by the State, or by a corporation owned or controlled by the State, of any trade, business, industry or service, whether to the exclusion, complete or partial, of citizens or otherwise.",
+                          "subClauses": [
+                              {
+                                  "subClause": "i",
+                                  "text": "the professional or technical qualifications necessary for practising any profession or carrying on any occupation, trade or business"
+                              },
+                              {
+                                  "subClause": "ii",
+                                  "text": "the carrying on by the State, or by a corporation owned or controlled by the State, of any trade, business, industry or service, whether to the exclusion, complete or partial, of citizens or otherwise"
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "articleId": 20,
+                  "articleNumber": 20,
+                  "title": "Protection in respect of conviction for offences",
+                  "description": "(1) No person shall be convicted of any offence except for violation of a law in force at the time of the commission of the Act charged as an offence, nor be subjected to a penalty greater than that which might have been inflicted under the law in force at the time of the commission of the offence.\n\n(2) No person shall be prosecuted and punished for the same offence more than once.\n\n(3) No person accused of any offence shall be compelled to be a witness against himself.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "No person shall be convicted of any offence except for violation of a law in force at the time of the commission of the Act charged as an offence, nor be subjected to a penalty greater than that which might have been inflicted under the law in force at the time of the commission of the offence."
+                      },
+                      {
+                          "clauseNumber": "2",
+                          "text": "No person shall be prosecuted and punished for the same offence more than once."
+                      },
+                      {
+                          "clauseNumber": "3",
+                          "text": "No person accused of any offence shall be compelled to be a witness against himself."
+                      }
+                  ]
+              },
+              {
+                  "articleId": 21,
+                  "articleNumber": 21,
+                  "title": "Protection of life and personal liberty",
+                  "description": "No person shall be deprived of his life or personal liberty except according to procedure established by law.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "No person shall be deprived of his life or personal liberty except according to procedure established by law."
+                      }
+                  ]
+              },
+              {
+                  "articleId": 22,
+                  "articleNumber": 22,
+                  "title": "Protection against arrest and detention in certain cases",
+                  "description": "(1) No person who is arrested shall be detained in custody without being informed, as soon as may be, of the grounds for such arrest nor shall he be denied the right to consult, and to be defended by, a legal practitioner of his choice.\n\n(2) Every person who is arrested and detained in custody shall be produced before the nearest magistrate within a period of twenty-four hours of such arrest excluding the time necessary for the journey from the place of arrest to the court of the magistrate and no such person shall be detained in custody beyond the said period without the authority of a magistrate.\n\n(3) Nothing in clauses (1) and (2) shall apply—\n(a) to any person who for the time being is an enemy alien; or\n(b) to any person who is arrested or detained under any law providing for preventive detention.\n\n(4) No law providing for preventive detention shall authorise the detention of a person for a longer period than three months unless—\n(a) an Advisory Board consisting of persons who are, or have been, or are qualified to be appointed as, Judges of a High Court has reported before the expiration of the said period of three months that there is in its opinion sufficient cause for such detention:\nProvided that nothing in this sub-clause shall authorise the detention of any person beyond the maximum period prescribed by any law made by Parliament under sub-clause (b) of clause (7); or\n(b) such person is detained in accordance with the provisions of any law made by Parliament under subclauses (a) and (b) of clause (7).\n\n(5) When any person is detained in pursuance of an order made under any law providing for preventive detention, the authority making the order shall, as soon as may be, communicate to such person the grounds on which the order has been made and shall afford him the earliest opportunity of making a representation against the order.\n\n(6) Nothing in clause (5) shall require the authority making any such order as is referred to in that clause to disclose facts which such authority considers to be against the public interest to disclose.\n\n(7) Parliament may by law prescribe—\n(a) the circumstances under which, and the class or classes of cases in which, a person may be detained for a period longer than three months under any law providing for preventive detention without obtaining the opinion of an Advisory Board in accordance with the provisions of sub-clause (a) of clause (4);\n(b) the maximum period for which any person may in any class or classes of cases be detained under any law providing for preventive detention; and\n(c) the procedure to be followed by an Advisory Board in an inquiry under sub-clause (a) of clause (4).",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "No person who is arrested shall be detained in custody without being informed, as soon as may be, of the grounds for such arrest nor shall he be denied the right to consult, and to be defended by, a legal practitioner of his choice."
+                      },
+                      {
+                          "clauseNumber": "2",
+                          "text": "Every person who is arrested and detained in custody shall be produced before the nearest magistrate within a period of twenty-four hours of such arrest excluding the time necessary for the journey from the place of arrest to the court of the magistrate and no such person shall be detained in custody beyond the said period without the authority of a magistrate."
+                      },
+                      {
+                          "clauseNumber": "3",
+                          "text": "Nothing in clauses (1) and (2) shall apply—\n(a) to any person who for the time being is an enemy alien; or\n(b) to any person who is arrested or detained under any law providing for preventive detention.",
+                          "subClauses": [
+                              {
+                                  "subClause": "a",
+                                  "text": "to any person who for the time being is an enemy alien"
+                              },
+                              {
+                                  "subClause": "b",
+                                  "text": "to any person who is arrested or detained under any law providing for preventive detention"
+                              }
+                          ]
+                      },
+                      {
+                          "clauseNumber": "4",
+                          "text": "No law providing for preventive detention shall authorise the detention of a person for a longer period than three months unless—\n(a) an Advisory Board consisting of persons who are, or have been, or are qualified to be appointed as, Judges of a High Court has reported before the expiration of the said period of three months that there is in its opinion sufficient cause for such detention: Provided that nothing in this sub-clause shall authorise the detention of any person beyond the maximum period prescribed by any law made by Parliament under sub-clause (b) of clause (7); or\n(b) such person is detained in accordance with the provisions of any law made by Parliament under subclauses (a) and (b) of clause (7).",
+                          "subClauses": [
+                              {
+                                  "subClause": "a",
+                                  "text": "an Advisory Board consisting of persons who are, or have been, or are qualified to be appointed as, Judges of a High Court has reported before the expiration of the said period of three months that there is in its opinion sufficient cause for such detention"
+                              },
+                              {
+                                  "subClause": "b",
+                                  "text": "such person is detained in accordance with the provisions of any law made by Parliament under subclauses (a) and (b) of clause (7)"
+                              }
+                          ]
+                      },
+                      {
+                          "clauseNumber": "5",
+                          "text": "When any person is detained in pursuance of an order made under any law providing for preventive detention, the authority making the order shall, as soon as may be, communicate to such person the grounds on which the order has been made and shall afford him the earliest opportunity of making a representation against the order."
+                      },
+                      {
+                          "clauseNumber": "6",
+                          "text": "Nothing in clause (5) shall require the authority making any such order as is referred to in that clause to disclose facts which such authority considers to be against the public interest to disclose."
+                      },
+                      {
+                          "clauseNumber": "7",
+                          "text": "Parliament may by law prescribe—\n(a) the circumstances under which, and the class or classes of cases in which, a person may be detained for a period longer than three months under any law providing for preventive detention without obtaining the opinion of an Advisory Board in accordance with the provisions of sub-clause (a) of clause (4);\n(b) the maximum period for which any person may in any class or classes of cases be detained under any law providing for preventive detention; and\n(c) the procedure to be followed by an Advisory Board in an inquiry under sub-clause (a) of clause (4).",
+                          "subClauses": [
+                              {
+                                  "subClause": "a",
+                                  "text": "the circumstances under which, and the class or classes of cases in which, a person may be detained for a period longer than three months under any law providing for preventive detention without obtaining the opinion of an Advisory Board in accordance with the provisions of sub-clause (a) of clause (4)"
+                              },
+                              {
+                                  "subClause": "b",
+                                  "text": "the maximum period for which any person may in any class or classes of cases be detained under any law providing for preventive detention"
+                              },
+                              {
+                                  "subClause": "c",
+                                  "text": "the procedure to be followed by an Advisory Board in an inquiry under sub-clause (a) of clause (4)"
+                              }
+                          ]
+                      }
+                  ],
+                  "provisos": [
+                      {
+                          "text": "Provided that nothing in this sub-clause shall authorise the detention of any person beyond the maximum period prescribed by any law made by Parliament under sub-clause (b) of clause (7)"
+                      }
+                  ]
+              },
+              {
+                  "articleId": 23,
+                  "articleNumber": 23,
+                  "title": "Prohibition of traffic in human beings and forced labour",
+                  "description": "(1) Traffic in human beings and begar and other similar forms of forced labour are prohibited and any contravention of this provision shall be an offence punishable in accordance with law.\n\n(2) Nothing in this article shall prevent the State from imposing compulsory service for public purposes, and in imposing such service the State shall not make any discrimination on grounds only of religion, race, caste or class or any of them.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "Traffic in human beings and begar and other similar forms of forced labour are prohibited and any contravention of this provision shall be an offence punishable in accordance with law."
+                      },
+                      {
+                          "clauseNumber": "2",
+                          "text": "Nothing in this article shall prevent the State from imposing compulsory service for public purposes, and in imposing such service the State shall not make any discrimination on grounds only of religion, race, caste or class or any of them."
+                      }
+                  ]
+              },
+              {
+                  "articleId": 24,
+                  "articleNumber": 24,
+                  "title": "Prohibition of employment of children in factories, etc",
+                  "description": "No child below the age of fourteen years shall be employed to work in any factory or mine or engaged in any other hazardous employment.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "No child below the age of fourteen years shall be employed to work in any factory or mine or engaged in any other hazardous employment."
+                      }
+                  ]
+              },
+              {
+                  "articleId": 25,
+                  "articleNumber": 25,
+                  "title": "Freedom of conscience and free profession, practice and propagation of religion",
+                  "description": "(1) Subject to public order, morality and health and to the other provisions of this Part, all persons are equally entitled to freedom of conscience and the right freely to profess, practise and propagate religion.\n\n(2) Nothing in this article shall affect the operation of any existing law or prevent the State from making any law—\n(a) regulating or restricting any economic, financial, political or other secular activity which may be associated with religious practice;\n(b) providing for social welfare and reform or the throwing open of Hindu religious institutions of a public character to all classes and sections of Hindus.\n\nExplanation I.—The wearing and carrying of kirpans shall be deemed to be included in the profession of the Sikh religion.\n\nExplanation II.—In sub-clause (b) of clause (2), the reference to Hindus shall be construed as including a reference to persons professing the Sikh, Jaina or Buddhist religion, and the reference to Hindu religious institutions shall be construed accordingly.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "Subject to public order, morality and health and to the other provisions of this Part, all persons are equally entitled to freedom of conscience and the right freely to profess, practise and propagate religion."
+                      },
+                      {
+                          "clauseNumber": "2",
+                          "text": "Nothing in this article shall affect the operation of any existing law or prevent the State from making any law—\n(a) regulating or restricting any economic, financial, political or other secular activity which may be associated with religious practice;\n(b) providing for social welfare and reform or the throwing open of Hindu religious institutions of a public character to all classes and sections of Hindus.",
+                          "subClauses": [
+                              {
+                                  "subClause": "a",
+                                  "text": "regulating or restricting any economic, financial, political or other secular activity which may be associated with religious practice"
+                              },
+                              {
+                                  "subClause": "b",
+                                  "text": "providing for social welfare and reform or the throwing open of Hindu religious institutions of a public character to all classes and sections of Hindus"
+                              }
+                          ]
+                      }
+                  ],
+                  "explanations": [
+                      {
+                          "explanationNumber": "I",
+                          "text": "The wearing and carrying of kirpans shall be deemed to be included in the profession of the Sikh religion."
+                      },
+                      {
+                          "explanationNumber": "II",
+                          "text": "In sub-clause (b) of clause (2), the reference to Hindus shall be construed as including a reference to persons professing the Sikh, Jaina or Buddhist religion, and the reference to Hindu religious institutions shall be construed accordingly."
+                      }
+                  ]
+              },
+              {
+                  "articleId": 26,
+                  "articleNumber": 26,
+                  "title": "Freedom to manage religious affairs",
+                  "description": "Subject to public order, morality and health, every religious denomination or any section thereof shall have the right—\n(a) to establish and maintain institutions for religious and charitable purposes;\n(b) to manage its own affairs in matters of religion;\n(c) to own and acquire movable and immovable property; and\n(d) to administer such property in accordance with law.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "Subject to public order, morality and health, every religious denomination or any section thereof shall have the right—\n(a) to establish and maintain institutions for religious and charitable purposes;\n(b) to manage its own affairs in matters of religion;\n(c) to own and acquire movable and immovable property; and\n(d) to administer such property in accordance with law.",
+                          "subClauses": [
+                              {
+                                  "subClause": "a",
+                                  "text": "to establish and maintain institutions for religious and charitable purposes"
+                              },
+                              {
+                                  "subClause": "b",
+                                  "text": "to manage its own affairs in matters of religion"
+                              },
+                              {
+                                  "subClause": "c",
+                                  "text": "to own and acquire movable and immovable property"
+                              },
+                              {
+                                  "subClause": "d",
+                                  "text": "to administer such property in accordance with law"
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "articleId": 27,
+                  "articleNumber": 27,
+                  "title": "Freedom as to payment of taxes for promotion of any particular religion",
+                  "description": "No person shall be compelled to pay any taxes, the proceeds of which are specifically appropriated in payment of expenses for the promotion or maintenance of any particular religion or religious denomination.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "No person shall be compelled to pay any taxes, the proceeds of which are specifically appropriated in payment of expenses for the promotion or maintenance of any particular religion or religious denomination."
+                      }
+                  ]
+              },
+              {
+                  "articleId": 28,
+                  "articleNumber": 28,
+                  "title": "Freedom as to attendance at religious instruction or religious worship in certain educational institutions",
+                  "description": "(1) No religious instruction shall be provided in any educational institution wholly maintained out of State funds.\n\n(2) Nothing in clause (1) shall apply to an educational institution which is administered by the State but has been established under any endowment or trust which requires that religious instruction shall be imparted in such institution.\n\n(3) No person attending any educational institution recognised by the State or receiving aid out of State funds shall be required to take part in any religious instruction that may be imparted in such institution or to attend any religious worship that may be conducted in such institution or in any premises attached thereto unless such person or, if such person is a minor, his guardian has given his consent thereto.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "No religious instruction shall be provided in any educational institution wholly maintained out of State funds."
+                      },
+                      {
+                          "clauseNumber": "2",
+                          "text": "Nothing in clause (1) shall apply to an educational institution which is administered by the State but has been established under any endowment or trust which requires that religious instruction shall be imparted in such institution."
+                      },
+                      {
+                          "clauseNumber": "3",
+                          "text": "No person attending any educational institution recognised by the State or receiving aid out of State funds shall be required to take part in any religious instruction that may be imparted in such institution or to attend any religious worship that may be conducted in such institution or in any premises attached thereto unless such person or, if such person is a minor, his guardian has given his consent thereto."
+                      }
+                  ]
+              },
+              {
+                  "articleId": 29,
+                  "articleNumber": 29,
+                  "title": "Protection of interests of minorities",
+                  "description": "(1) Any section of the citizens residing in the territory of India or any part thereof having a distinct language, script or culture of its own shall have the right to conserve the same.\n\n(2) No citizen shall be denied admission into any educational institution maintained by the State or receiving aid out of State funds on grounds only of religion, race, caste, language or any of them.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "Any section of the citizens residing in the territory of India or any part thereof having a distinct language, script or culture of its own shall have the right to conserve the same."
+                      },
+                      {
+                          "clauseNumber": "2",
+                          "text": "No citizen shall be denied admission into any educational institution maintained by the State or receiving aid out of State funds on grounds only of religion, race, caste, language or any of them."
+                      }
+                  ]
+              },
+              {
+                  "articleId": 30,
+                  "articleNumber": 30,
+                  "title": "Right of minorities to establish and administer educational institutions",
+                  "description": "(1) All minorities, whether based on religion or language, shall have the right to establish and administer educational institutions of their choice.\n\n(1A) In making any law providing for the compulsory acquisition of any property of an educational institution established and administered by a minority referred to in clause (1), the State shall ensure that the amount fixed by or determined under such law for the acquisition of such property is such as would not restrict or abrogate the right guaranteed under that clause.\n\n(2) The State shall not, in granting aid to educational institutions, discriminate against any educational institution on the ground that it is under the management of a minority, whether based on religion or language.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "All minorities, whether based on religion or language, shall have the right to establish and administer educational institutions of their choice."
+                      },
+                      {
+                          "clauseNumber": "1A",
+                          "text": "In making any law providing for the compulsory acquisition of any property of an educational institution established and administered by a minority referred to in clause (1), the State shall ensure that the amount fixed by or determined under such law for the acquisition of such property is such as would not restrict or abrogate the right guaranteed under that clause."
+                      },
+                      {
+                          "clauseNumber": "2",
+                          "text": "The State shall not, in granting aid to educational institutions, discriminate against any educational institution on the ground that it is under the management of a minority, whether based on religion or language."
+                      }
+                  ]
+              },
+              {
+                  "articleId": 31,
+                  "articleNumber": 31,
+                  "title": "Compulsory acquisition of property",
+                  "description": "[Compulsory acquisition of property.] Rep. by the Constitution (Forty-fourth Amendment) Act, 1978, s. 6 (w.e.f. 20-6-1979).",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "[Compulsory acquisition of property.] Rep. by the Constitution (Forty-fourth Amendment) Act, 1978, s. 6 (w.e.f. 20-6-1979)."
+                      }
+                  ]
+              },
+              {
+                  "articleId": 32,
+                  "articleNumber": 32,
+                  "title": "Remedies for enforcement of rights conferred by this Part",
+                  "description": "(1) The right to move the Supreme Court by appropriate proceedings for the enforcement of the rights conferred by this Part is guaranteed.\n\n(2) The Supreme Court shall have power to issue directions or orders or writs, including writs in the nature of habeas corpus, mandamus, prohibition, quo warranto and certiorari, whichever may be appropriate, for the enforcement of any of the rights conferred by this Part.\n\n(3) Without prejudice to the powers conferred on the Supreme Court by clauses (1) and (2), Parliament may by law empower any other court to exercise within the local limits of its jurisdiction all or any of the powers exercisable by the Supreme Court under clause (2).\n\n(4) The right guaranteed by this article shall not be suspended except as otherwise provided for by this Constitution.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "The right to move the Supreme Court by appropriate proceedings for the enforcement of the rights conferred by this Part is guaranteed."
+                      },
+                      {
+                          "clauseNumber": "2",
+                          "text": "The Supreme Court shall have power to issue directions or orders or writs, including writs in the nature of habeas corpus, mandamus, prohibition, quo warranto and certiorari, whichever may be appropriate, for the enforcement of any of the rights conferred by this Part."
+                      },
+                      {
+                          "clauseNumber": "3",
+                          "text": "Without prejudice to the powers conferred on the Supreme Court by clauses (1) and (2), Parliament may by law empower any other court to exercise within the local limits of its jurisdiction all or any of the powers exercisable by the Supreme Court under clause (2)."
+                      },
+                      {
+                          "clauseNumber": "4",
+                          "text": "The right guaranteed by this article shall not be suspended except as otherwise provided for by this Constitution."
+                      }
+                  ]
+              },
+              {
+                  "articleId": 33,
+                  "articleNumber": 33,
+                  "title": "Power of Parliament to modify the rights conferred by this Part in their application to Forces, etc",
+                  "description": "Parliament may, by law, determine to what extent any of the rights conferred by this Part shall, in their application to,—\n(a) the members of the Armed Forces; or\n(b) the members of the Forces charged with the maintenance of public order; or\n(c) persons employed in any bureau or other organisation established by the State for purposes of intelligence or counter intelligence; or\n(d) person employed in, or in connection with, the telecommunication systems set up for the purposes of any Force, bureau or organisation referred to in clauses (a) to (c),\n\nbe restricted or abrogated so as to ensure the proper discharge of their duties and the maintenance of discipline among them.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "Parliament may, by law, determine to what extent any of the rights conferred by this Part shall, in their application to,—\n(a) the members of the Armed Forces; or\n(b) the members of the Forces charged with the maintenance of public order; or\n(c) persons employed in any bureau or other organisation established by the State for purposes of intelligence or counter intelligence; or\n(d) person employed in, or in connection with, the telecommunication systems set up for the purposes of any Force, bureau or organisation referred to in clauses (a) to (c),\n\nbe restricted or abrogated so as to ensure the proper discharge of their duties and the maintenance of discipline among them.",
+                          "subClauses": [
+                              {
+                                  "subClause": "a",
+                                  "text": "the members of the Armed Forces"
+                              },
+                              {
+                                  "subClause": "b",
+                                  "text": "the members of the Forces charged with the maintenance of public order"
+                              },
+                              {
+                                  "subClause": "c",
+                                  "text": "persons employed in any bureau or other organisation established by the State for purposes of intelligence or counter intelligence"
+                              },
+                              {
+                                  "subClause": "d",
+                                  "text": "person employed in, or in connection with, the telecommunication systems set up for the purposes of any Force, bureau or organisation referred to in clauses (a) to (c)"
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "articleId": 34,
+                  "articleNumber": 34,
+                  "title": "Restriction on rights conferred by this Part while martial law is in force in any area",
+                  "description": "Notwithstanding anything in the foregoing provisions of this Part, Parliament may by law indemnify any person in the service of the Union or of a State or any other person in respect of any act done by him in connection with the maintenance or restoration of order in any area within the territory of India where martial law was in force or validate any sentence passed, punishment inflicted, forfeiture ordered or other act done under martial law in such area.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "1",
+                          "text": "Notwithstanding anything in the foregoing provisions of this Part, Parliament may by law indemnify any person in the service of the Union or of a State or any other person in respect of any act done by him in connection with the maintenance or restoration of order in any area within the territory of India where martial law was in force or validate any sentence passed, punishment inflicted, forfeiture ordered or other act done under martial law in such area."
+                      }
+                  ]
+              },
+              {
+                  "articleId": 35,
+                  "articleNumber": 35,
+                  "title": "Legislation to give effect to the provisions of this Part",
+                  "description": "Notwithstanding anything in this Constitution,—\n(a) Parliament shall have, and the Legislature of a State shall not have, power to make laws—\n(i) with respect to any of the matters which under clause (3) of article 16, clause (3) of article 32, article 33 and article 34 may be provided for by law made by Parliament; and\n(ii) for prescribing punishment for those acts which are declared to be offences under this Part;\n(b) any law in force immediately before the commencement of this Constitution in the territory of India with respect to any of the matters referred to in sub-clause (i) of clause (a) or providing for punishment for any act referred to in sub-clause (ii) of that clause shall, subject to the terms thereof and to any adaptations and modifications that may be made therein under article 372, continue in force until altered or repealed or amended by Parliament.\n\nExplanation.—In this article, the expression \"law in force\" has the same meaning as in article 372.",
+                  "clauses": [
+                      {
+                          "clauseNumber": "a",
+                          "text": "Parliament shall have, and the Legislature of a State shall not have, power to make laws—\n(i) with respect to any of the matters which under clause (3) of article 16, clause (3) of article 32, article 33 and article 34 may be provided for by law made by Parliament; and\n(ii) for prescribing punishment for those acts which are declared to be offences under this Part",
+                          "subClauses": [
+                              {
+                                  "subClause": "i",
+                                  "text": "with respect to any of the matters which under clause (3) of article 16, clause (3) of article 32, article 33 and article 34 may be provided for by law made by Parliament"
+                              },
+                              {
+                                  "subClause": "ii",
+                                  "text": "for prescribing punishment for those acts which are declared to be offences under this Part"
+                              }
+                          ]
+                      },
+                      {
+                          "clauseNumber": "b",
+                          "text": "any law in force immediately before the commencement of this Constitution in the territory of India with respect to any of the matters referred to in sub-clause (i) of clause (a) or providing for punishment for any act referred to in sub-clause (ii) of that clause shall, subject to the terms thereof and to any adaptations and modifications that may be made therein under article 372, continue in force until altered or repealed or amended by Parliament."
+                      }
+                  ],
+                  "explanations": [
+                      {
+                          "explanationNumber": "1",
+                          "text": "In this article, the expression \"law in force\" has the same meaning as in article 372."
+                      }
+                  ]
+              }
+          ]
+      }
+    ]
+  }
+}
