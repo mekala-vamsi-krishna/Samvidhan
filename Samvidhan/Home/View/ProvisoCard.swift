@@ -32,11 +32,6 @@ struct ProvisoCard: View {
                 
                 // Proviso Content
                 VStack(alignment: .leading, spacing: 8) {
-                    Text("Provided that")
-                        .font(.subheadline)
-                        .fontWeight(.medium)
-                        .foregroundColor(AppColors.saffron)
-                    
                     Text(proviso.text)
                         .font(.body)
                         .foregroundColor(AppColors.primaryText)

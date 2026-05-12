@@ -28,16 +28,10 @@ struct ProvisoDetailSheet: View {
                                 .foregroundColor(AppColors.saffron)
                         }
                         
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text("Proviso")
-                                .font(.title2)
-                                .fontWeight(.semibold)
-                                .foregroundColor(AppColors.primaryNavy)
-                            
-                            Text("Provided that")
-                                .font(.subheadline)
-                                .foregroundColor(AppColors.saffron)
-                        }
+                        Text("Proviso")
+                            .font(.title2)
+                            .fontWeight(.semibold)
+                            .foregroundColor(AppColors.primaryNavy)
                     }
                     .padding(.bottom, 8)
                     

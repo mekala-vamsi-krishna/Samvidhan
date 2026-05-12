@@ -65,7 +65,7 @@ private extension PartDetailView {
                         
                         Label("\(part.articleRange)", systemImage: "doc.text")
                         
-                        Label("\(part.articles.count) Articles", systemImage: "person.2")
+                        Label("\(part.articles.count) Articles", systemImage: "list.star")
                     }
                     .font(.caption)
                     .foregroundColor(AppColors.secondaryText)

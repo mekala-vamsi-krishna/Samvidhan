@@ -8,16 +8,6 @@
 import SwiftUI
 
 // MARK: - Main Article Detail View
-//
-//  ArticleDetailView.swift
-//  Samvidhan
-//
-//  Created by Mekala Vamsi Krishna on 5/10/26.
-//
-
-import SwiftUI
-
-// MARK: - Main Article Detail View
 struct ArticleDetailView: View {
     let article: Article
     let allArticles: [Article]
@@ -26,12 +16,9 @@ struct ArticleDetailView: View {
     @State private var expandedClauses: Set<String> = []
     @State private var showingShareSheet = false
     @State private var selectedClauseForDetail: Clause?
-    @State private var showClauseDetailSheet = false
     @State private var selectedProvisoForDetail: Proviso?
     @State private var selectedProvisoIndex: Int = 0
-    @State private var showProvisoDetailSheet = false
     @State private var selectedExplanationForDetail: Explanation?
-    @State private var showExplanationDetailSheet = false
     @State private var transitionDirection: TransitionDirection = .forward
     @State private var currentArticle: Article
     
@@ -120,20 +107,18 @@ struct ArticleDetailView: View {
         .sheet(isPresented: $showingShareSheet) {
             ShareSheet(activityItems: [shareContent])
         }
-        .sheet(isPresented: $showClauseDetailSheet) {
-            if let clause = selectedClauseForDetail {
-                ClauseDetailSheet(clause: clause)
-            }
+        .sheet(item: $selectedClauseForDetail) { clause in
+            ClauseDetailSheet(clause: clause)
         }
-        .sheet(isPresented: $showProvisoDetailSheet) {
-            if let proviso = selectedProvisoForDetail {
-                ProvisoDetailSheet(proviso: proviso, index: selectedProvisoIndex)
-            }
+        .sheet(item: $selectedClauseForDetail) { clause in
+            ClauseDetailSheet(clause: clause)
         }
-        .sheet(isPresented: $showExplanationDetailSheet) {
-            if let explanation = selectedExplanationForDetail {
-                ExplanationDetailSheet(explanation: explanation)
-            }
+        .sheet(item: $selectedProvisoForDetail) { proviso in
+            ProvisoDetailSheet(proviso: proviso, index: selectedProvisoIndex)
+        }
+
+        .sheet(item: $selectedExplanationForDetail) { explanation in
+            ExplanationDetailSheet(explanation: explanation)
         }
         .onChange(of: article.articleId) { newId in
             // Update current article when the parent updates the article
@@ -217,7 +202,6 @@ struct ArticleDetailView: View {
                         },
                         onSeeMore: {
                             selectedClauseForDetail = clause
-                            showClauseDetailSheet = true
                         }
                     )
                 }
@@ -241,7 +225,6 @@ struct ArticleDetailView: View {
                         onSeeMore: {
                             selectedProvisoForDetail = proviso
                             selectedProvisoIndex = index
-                            showProvisoDetailSheet = true
                         }
                     )
                 }
@@ -263,7 +246,6 @@ struct ArticleDetailView: View {
                         explanation: explanation,
                         onSeeMore: {
                             selectedExplanationForDetail = explanation
-                            showExplanationDetailSheet = true
                         }
                     )
                 }

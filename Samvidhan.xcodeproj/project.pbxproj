@@ -35,6 +35,7 @@
 		AC7E97302FB37424000359D8 /* SubClauseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E972F2FB37424000359D8 /* SubClauseItem.swift */; };
 		AC7E97322FB37433000359D8 /* ClauseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E97312FB37433000359D8 /* ClauseCard.swift */; };
 		AC7E97342FB374D9000359D8 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E97332FB374D9000359D8 /* ShareSheet.swift */; };
+		AC7E97362FB39794000359D8 /* PreambleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E97352FB39794000359D8 /* PreambleDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		AC7E972F2FB37424000359D8 /* SubClauseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubClauseItem.swift; sourceTree = "<group>"; };
 		AC7E97312FB37433000359D8 /* ClauseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClauseCard.swift; sourceTree = "<group>"; };
 		AC7E97332FB374D9000359D8 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		AC7E97352FB39794000359D8 /* PreambleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreambleDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 				AC097C952FAFB2FC00F6DA71 /* HomeView.swift */,
 				AC097CB62FAFB51200F6DA71 /* PreambleCard.swift */,
 				AC097CAB2FAFB44600F6DA71 /* PartCard.swift */,
+				AC7E97352FB39794000359D8 /* PreambleDetailView.swift */,
 				AC097CAE2FAFB47D00F6DA71 /* PartsSection.swift */,
 				AC097CB42FAFB4F700F6DA71 /* PartDetailView.swift */,
 				AC097CB02FAFB4AD00F6DA71 /* AllPartsView.swift */,
@@ -279,6 +282,7 @@
 				AC7E972E2FB37400000359D8 /* ProvisoCard.swift in Sources */,
 				AC097CB52FAFB4F700F6DA71 /* PartDetailView.swift in Sources */,
 				AC097C9D2FAFB2FC00F6DA71 /* ConstitutionResponse.swift in Sources */,
+				AC7E97362FB39794000359D8 /* PreambleDetailView.swift in Sources */,
 				AC097CB32FAFB4D600F6DA71 /* ArticleDetailView.swift in Sources */,
 				AC097C9E2FAFB2FC00F6DA71 /* BookmarksView.swift in Sources */,
 				AC7E97342FB374D9000359D8 /* ShareSheet.swift in Sources */,

@@ -12,15 +12,9 @@ struct PreambleCard: View {
     let preamble: Preamble
     
     var body: some View {
-        NavigationLink(destination: ArticleDetailView(article: Article(
-            articleId: 0,
-            articleNumber: "0",
-            title: preamble.title,
-            description: preamble.description,
-            clauses: nil,
-            provisos: nil,
-            explanations: nil
-        ))) {
+        NavigationLink(destination:
+            PreambleDetailView()
+        ) {
             HStack(spacing: 0) {
                 // Leading Saffron Strip
                 Rectangle()
@@ -37,7 +31,7 @@ struct PreambleCard: View {
                             .fill(AppColors.primaryNavy)
                             .frame(width: 52, height: 52)
                         
-                        Text("P")
+                        Image(systemName: "building.columns.fill")
                             .font(.system(size: 16, weight: .bold))
                             .foregroundColor(AppColors.saffron)
                     }
