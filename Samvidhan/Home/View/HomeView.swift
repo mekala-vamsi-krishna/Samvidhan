@@ -7,15 +7,9 @@
 
 import SwiftUI
 
-//
-//  HomeView.swift
-//  Samvidhan
-//
-
-import SwiftUI
-
 struct HomeView: View {
     @StateObject private var viewModel = ConstitutionViewModel()
+    @State private var isLogoAnimating = false
     
     var body: some View {
         NavigationStack {
@@ -28,6 +22,9 @@ struct HomeView: View {
                             viewModel.loadConstitutionData()
                         })
                     } else {
+                        // MARK: - Logo Section
+                        logoSection
+                        
                         // Preamble Card
                         if let preamble = viewModel.preamble {
                             PreambleCard(preamble: preamble)
@@ -41,29 +38,45 @@ struct HomeView: View {
                 .padding(.vertical, 12)
             }
             .background(AppColors.pureWhite)
-            .navigationTitle("Constitution")
-            .navigationBarTitleDisplayMode(.large)
+            .navigationBarHidden(true)
         }
         .onAppear {
             viewModel.loadConstitutionData()
+            withAnimation(.easeInOut(duration: 0.8).delay(0.3)) {
+                isLogoAnimating = true
+            }
+        }
+    }
+    
+    // MARK: - Logo Section (Normal display - not circular)
+    private var logoSection: some View {
+        VStack(spacing: 12) {
+            Image("logo")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 200, height: 150)
         }
     }
 }
 
 // MARK: - Loading View
 struct LoadingView: View {
+    @State private var isRotating = false
+    
     var body: some View {
         VStack(spacing: 20) {
-            ProgressView()
-                .scaleEffect(1.5)
-                .tint(AppColors.saffron)
+            Circle()
+                .trim(from: 0, to: 0.7)
+                .stroke(AppColors.saffron, lineWidth: 3)
+                .frame(width: 50, height: 50)
+                .rotationEffect(.degrees(isRotating ? 360 : 0))
+                .animation(.linear(duration: 1).repeatForever(autoreverses: false), value: isRotating)
+                .onAppear {
+                    isRotating = true
+                }
             
             Text("Loading Constitution...")
-                .font(.headline)
-                .foregroundColor(AppColors.primaryNavy)
-            
-            Text("The supreme law of India")
-                .font(.caption)
+                .font(.subheadline)
                 .foregroundColor(AppColors.secondaryText)
         }
         .frame(maxWidth: .infinity)
@@ -82,8 +95,9 @@ struct ErrorView: View {
                 .font(.system(size: 50))
                 .foregroundColor(AppColors.saffron)
             
-            Text("Unable to Load Data")
-                .font(.headline)
+            Text("Failed to Load")
+                .font(.title3)
+                .fontWeight(.semibold)
                 .foregroundColor(AppColors.primaryNavy)
             
             Text(errorMessage)
@@ -96,11 +110,11 @@ struct ErrorView: View {
                     Image(systemName: "arrow.clockwise")
                     Text("Retry")
                 }
-                .foregroundColor(AppColors.saffron)
-                .padding(.horizontal, 20)
-                .padding(.vertical, 10)
-                .background(AppColors.saffron.opacity(0.1))
-                .cornerRadius(8)
+                .padding(.horizontal, 24)
+                .padding(.vertical, 12)
+                .background(AppColors.saffron)
+                .foregroundColor(.white)
+                .cornerRadius(10)
             }
         }
         .frame(maxWidth: .infinity)
@@ -108,6 +122,7 @@ struct ErrorView: View {
     }
 }
 
+// MARK: - Preview
 #Preview {
     HomeView()
 }

@@ -98,7 +98,6 @@ struct PreambleDetailView: View {
             }
         }
         .background(AppColors.cream)
-        .ignoresSafeArea()
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
