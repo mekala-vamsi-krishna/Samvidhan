@@ -104,22 +104,34 @@ private extension PartDetailView {
             }
             .padding(.horizontal, 4)
             
-            // Native List
-            List {
-                ForEach(part.articles) { article in
-                    NavigationLink(destination: ArticleDetailView(article: article)) {
+            // Native List with Navigation
+            LazyVStack(spacing: 8) {
+                ForEach(Array(part.articles.enumerated()), id: \.element.id) { index, article in
+                    NavigationLink(
+                        destination: ArticleDetailView(
+                            article: article,
+                            allArticles: getAllArticles(),
+                            onNavigate: { newArticle in
+                                // This will be handled by the navigation system
+                                // The parent view will update automatically
+                            }
+                        )
+                    ) {
                         ArticleRowView(article: article)
                     }
-                    .listRowInsets(EdgeInsets(top: 12, leading: 0, bottom: 12, trailing: 0))
+                    .buttonStyle(PlainButtonStyle())
                 }
             }
-            .listStyle(.plain)
-            .scrollDisabled(true) // Important because inside ScrollView
-            .frame(height: CGFloat(part.articles.count) * 80) // adjust row height
         }
+    }
+    
+    // Helper function to get all articles from the part
+    func getAllArticles() -> [Article] {
+        return part.articles
     }
 }
 
+// MARK: - Article Row View
 struct ArticleRowView: View {
     let article: Article
     
@@ -132,8 +144,8 @@ struct ArticleRowView: View {
                     .fill(AppColors.saffron.opacity(0.15))
                     .frame(width: 54, height: 54)
                 
-                Text("\(article.articleNumber)")
-                    .font(.system(size: 20, weight: .heavy)) // Much thicker
+                Text(article.articleNumber)
+                    .font(.system(size: 20, weight: .heavy))
                     .foregroundColor(AppColors.saffron)
             }
             
@@ -151,11 +163,67 @@ struct ArticleRowView: View {
             }
             
             Spacer()
+            
+            // Chevron indicator
+            Image(systemName: "chevron.right")
+                .font(.system(size: 14, weight: .medium))
+                .foregroundColor(Color.gray.opacity(0.5))
         }
-        .padding(.horizontal, 4)
+        .padding(.horizontal, 12)
+        .padding(.vertical, 8)
+        .background(
+            RoundedRectangle(cornerRadius: 12)
+                .fill(Color.white)
+                .shadow(color: Color.black.opacity(0.04), radius: 3, x: 0, y: 1)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 12)
+                        .stroke(Color.gray.opacity(0.1), lineWidth: 1)
+                )
+        )
     }
 }
 
+// MARK: - Preview
 #Preview {
-    PartDetailView(part: Part(partId: 1, partNumber: "", partTitle: "", articleRange: "", articles: []))
+    let sampleArticles = [
+        Article(
+            articleId: 1,
+            articleNumber: "1",
+            title: "Name and territory of the Union",
+            description: "India, that is Bharat, shall be a Union of States.",
+            clauses: nil,
+            provisos: nil,
+            explanations: nil
+        ),
+        Article(
+            articleId: 2,
+            articleNumber: "2",
+            title: "Admission or establishment of new States",
+            description: "Parliament may by law admit into the Union, or establish, new States.",
+            clauses: nil,
+            provisos: nil,
+            explanations: nil
+        ),
+        Article(
+            articleId: 3,
+            articleNumber: "3",
+            title: "Formation of new States",
+            description: "Parliament may by law form a new State by separation of territory.",
+            clauses: nil,
+            provisos: nil,
+            explanations: nil
+        )
+    ]
+    
+    let samplePart = Part(
+        partId: 1,
+        partNumber: "I",
+        partTitle: "The Union and its Territory",
+        articleRange: "Articles 1-4",
+        articles: sampleArticles
+    )
+    
+    NavigationView {
+        PartDetailView(part: samplePart)
+    }
 }

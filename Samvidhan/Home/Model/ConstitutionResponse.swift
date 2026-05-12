@@ -42,7 +42,7 @@ struct Part: Codable, Identifiable {
 struct Article: Codable, Identifiable {
     let id = UUID()
     let articleId: Int
-    let articleNumber: Int
+    let articleNumber: String
     let title: String
     let description: String
     let clauses: [Clause]?

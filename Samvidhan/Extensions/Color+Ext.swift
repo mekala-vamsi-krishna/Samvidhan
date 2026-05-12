@@ -12,7 +12,7 @@ enum AppColors {
     static let background = Color(hex: "0F172A")
     static let card = Color(hex: "#1E293B")
     static let cardBorder = Color(hex: "#E8E6DF")
-    static let primaryText = Color(hex: "#F1F5F9")
+    static let primaryText = Color(hex: "#000000")
     static let secondaryText = Color(hex: "#94A3B8")
     
     // Colors based on the HEX values

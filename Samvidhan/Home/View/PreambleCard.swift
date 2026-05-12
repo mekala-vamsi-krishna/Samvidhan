@@ -14,7 +14,7 @@ struct PreambleCard: View {
     var body: some View {
         NavigationLink(destination: ArticleDetailView(article: Article(
             articleId: 0,
-            articleNumber: 0,
+            articleNumber: "0",
             title: preamble.title,
             description: preamble.description,
             clauses: nil,

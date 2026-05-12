@@ -9,44 +9,62 @@ import SwiftUI
 
 struct MainTabView: View {
     
-    @State private var selectedTab: Tab = .home
+    @State private var selectedTab: AppTab = .home
     
     var body: some View {
         TabView(selection: $selectedTab) {
             
-            HomeView()
-                .tabItem {
-                    Label("Home", systemImage: "house.fill")
+            Tab("Home",
+                systemImage: "house.fill",
+                value: AppTab.home) {
+                NavigationStack {
+                    HomeView()
                 }
-                .tag(Tab.home)
+            }
             
-            BookmarksView()
-                .tabItem {
-                    Label("Bookmarks", systemImage: "bookmark.fill")
+            Tab("Bookmarks",
+                systemImage: "bookmark.fill",
+                value: AppTab.bookmarks) {
+                NavigationStack {
+                    BookmarksView()
                 }
-                .tag(Tab.bookmarks)
+            }
             
-            RecentsView()
-                .tabItem {
-                    Label("Recents", systemImage: "clock.fill")
+            Tab("Recents",
+                systemImage: "clock.fill",
+                value: AppTab.recents) {
+                NavigationStack {
+                    RecentsView()
                 }
-                .tag(Tab.recents)
+            }
             
-            SettingsView()
-                .tabItem {
-                    Label("Settings", systemImage: "gearshape.fill")
+            Tab("Search",
+                systemImage: "magnifyingglass",
+                value: AppTab.search,
+                role: .search) {
+                NavigationStack {
+                    SearchView()
                 }
-                .tag(Tab.settings)
+            }
+            
+            Tab("Settings",
+                systemImage: "gearshape.fill",
+                value: AppTab.settings) {
+                NavigationStack {
+                    SettingsView()
+                }
+            }
         }
         .tint(AppColors.saffron)
     }
 }
 
-enum Tab {
+enum AppTab: Hashable {
     case home
     case bookmarks
     case recents
     case settings
+    case search
 }
 
 #Preview {
