@@ -28,14 +28,14 @@ struct PartCard: View {
                             .frame(width: 64, height: 64)
                         
                         Text(part.partNumber)
-                            .font(.system(size: 26))
+                            .font(.timesNewRoman(size: 16, weight: .bold))
                             .foregroundColor(AppColors.saffron)
                     }
                     
                     // Content
                     VStack(alignment: .leading, spacing: 4) {
                         Text(part.partTitle)
-                            .font(.system(size: 16, weight: .semibold))
+                            .font(.timesNewRoman(size: 16, weight: .bold))
                             .foregroundColor(AppColors.primaryNavy)
                             .lineLimit(1)
                         

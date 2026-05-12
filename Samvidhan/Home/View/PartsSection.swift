@@ -11,7 +11,7 @@ struct PartsSection: View {
     let parts: [Part]
     
     var displayedParts: [Part] {
-        Array(parts.prefix(10))
+        Array(parts.prefix(5))
     }
     
     var body: some View {
@@ -19,13 +19,12 @@ struct PartsSection: View {
             // Section Header
             HStack {
                 Text("Constitution Parts")
-                    .font(.title2)
-                    .fontWeight(.bold)
+                    .font(.timesNewRoman(size: 22, weight: .bold))
                     .foregroundColor(AppColors.primaryNavy)
                 
                 Spacer()
                 
-                if parts.count > 10 {
+                if parts.count > 5 {
                     NavigationLink(destination: AllPartsView(parts: parts)) {
                         HStack(spacing: 4) {
                             Text("View All")

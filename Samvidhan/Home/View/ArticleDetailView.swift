@@ -135,8 +135,7 @@ struct ArticleDetailView: View {
         VStack(alignment: .leading, spacing: 8) {
             if !currentArticle.articleNumber.isEmpty {
                 Text("Article \(currentArticle.articleNumber)")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
+                    .font(.timesNewRoman(size: 32, weight: .semibold))
                     .foregroundColor(AppColors.primaryNavy)
             }
             
@@ -152,8 +151,7 @@ struct ArticleDetailView: View {
     private var articleTitleBoxView: some View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Article Text")
-                .font(.title2)
-                .fontWeight(.semibold)
+                .font(.timesNewRoman(size: 22, weight: .semibold))
                 .foregroundColor(AppColors.primaryNavy)
             
             HStack(alignment: .top, spacing: 12) {
@@ -188,8 +186,7 @@ struct ArticleDetailView: View {
     private func clausesSection(clauses: [Clause]) -> some View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Clauses")
-                .font(.title2)
-                .fontWeight(.semibold)
+                .font(.timesNewRoman(size: 22, weight: .semibold))
                 .foregroundColor(AppColors.primaryNavy)
             
             VStack(spacing: 12) {
@@ -213,8 +210,7 @@ struct ArticleDetailView: View {
     private func provisosSection(provisos: [Proviso]) -> some View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Provisos")
-                .font(.title2)
-                .fontWeight(.semibold)
+                .font(.timesNewRoman(size: 22, weight: .semibold))
                 .foregroundColor(AppColors.primaryNavy)
             
             VStack(spacing: 12) {
@@ -236,8 +232,7 @@ struct ArticleDetailView: View {
     private func explanationsSection(explanations: [Explanation]) -> some View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Explanations")
-                .font(.title2)
-                .fontWeight(.semibold)
+                .font(.timesNewRoman(size: 22, weight: .semibold))
                 .foregroundColor(AppColors.primaryNavy)
             
             VStack(spacing: 12) {

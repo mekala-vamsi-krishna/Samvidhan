@@ -164,8 +164,7 @@ struct TimelineItem: View {
             // Content
             VStack(alignment: .leading, spacing: 8) {
                 Text(title)
-                    .font(.headline)
-                    .fontWeight(.semibold)
+                    .font(.timesNewRoman(size: 16, weight: .semibold))
                     .foregroundColor(AppColors.primaryNavy)
                 
                 Text(date)

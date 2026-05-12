@@ -29,8 +29,7 @@ struct ExplanationDetailSheet: View {
                         
                         VStack(alignment: .leading, spacing: 4) {
                             Text("Explanation \(explanation.explanationNumber)")
-                                .font(.title2)
-                                .fontWeight(.semibold)
+                                .font(.timesNewRoman(size: 22, weight: .semibold))
                                 .foregroundColor(AppColors.primaryNavy)
                         }
                     }

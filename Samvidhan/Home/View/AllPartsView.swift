@@ -20,7 +20,7 @@ struct AllPartsView: View {
             .padding(.horizontal, 16)
             .padding(.vertical, 12)
         }
-        .background(AppColors.cream)
+        .background(AppColors.pureWhite)
         .navigationTitle("All Parts")
         .navigationBarTitleDisplayMode(.inline)
     }

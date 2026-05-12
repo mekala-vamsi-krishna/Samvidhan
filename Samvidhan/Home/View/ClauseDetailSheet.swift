@@ -29,8 +29,7 @@ struct ClauseDetailSheet: View {
                         }
                         
                         Text("Clause")
-                            .font(.title)
-                            .fontWeight(.semibold)
+                            .font(.timesNewRoman(size: 22, weight: .semibold))
                             .foregroundColor(AppColors.primaryNavy)
                     }
                     .padding(.bottom, 8)

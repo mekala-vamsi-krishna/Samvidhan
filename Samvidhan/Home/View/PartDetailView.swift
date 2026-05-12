@@ -58,7 +58,7 @@ private extension PartDetailView {
                 VStack(alignment: .leading, spacing: 8) {
                     
                     Text("Part \(part.partNumber) – \(part.partTitle)")
-                        .font(.headline)
+                        .font(.timesNewRoman(size: 22, weight: .bold))
                         .foregroundColor(AppColors.primaryNavy)
                     
                     HStack(spacing: 20) {
@@ -93,7 +93,7 @@ private extension PartDetailView {
             // Section Header
             HStack {
                 Text("Articles")
-                    .font(.title3.weight(.semibold))
+                    .font(.timesNewRoman(size: 22, weight: .bold))
                     .foregroundColor(AppColors.primaryNavy)
                 
                 Spacer()
@@ -145,7 +145,7 @@ struct ArticleRowView: View {
                     .frame(width: 54, height: 54)
                 
                 Text(article.articleNumber)
-                    .font(.system(size: 20, weight: .heavy))
+                    .font(.timesNewRoman(size: 22, weight: .heavy))
                     .foregroundColor(AppColors.saffron)
             }
             
@@ -153,7 +153,7 @@ struct ArticleRowView: View {
             VStack(alignment: .leading, spacing: 4) {
                 
                 Text("Article \(article.articleNumber)")
-                    .font(.system(size: 16, weight: .semibold))
+                    .font(.timesNewRoman(size: 16, weight: .semibold))
                     .foregroundColor(AppColors.primaryNavy)
                 
                 Text(article.title)
@@ -169,6 +169,8 @@ struct ArticleRowView: View {
                 .font(.system(size: 14, weight: .medium))
                 .foregroundColor(Color.gray.opacity(0.5))
         }
+        .navigationTitle("Articles")
+        .navigationBarTitleDisplayMode(.inline)
         .padding(.horizontal, 12)
         .padding(.vertical, 8)
         .background(

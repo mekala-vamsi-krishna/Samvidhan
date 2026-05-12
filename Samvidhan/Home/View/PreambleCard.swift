@@ -12,9 +12,7 @@ struct PreambleCard: View {
     let preamble: Preamble
     
     var body: some View {
-        NavigationLink(destination:
-            PreambleDetailView()
-        ) {
+        NavigationLink(destination: PreambleDetailView()) {
             HStack(spacing: 0) {
                 // Leading Saffron Strip
                 Rectangle()
@@ -24,23 +22,24 @@ struct PreambleCard: View {
                 
                 // Main Content
                 HStack(spacing: 12) {
-                    // Circular Icon Container
+                    // Circular App Icon
                     ZStack {
                         Circle()
                             .stroke(AppColors.saffron, lineWidth: 1.5)
-                            .fill(AppColors.primaryNavy)
-                            .frame(width: 52, height: 52)
+                            .fill(Color.white)
+                            .frame(width: 64, height: 64)
                         
-                        Image(systemName: "building.columns.fill")
-                            .font(.system(size: 16, weight: .bold))
-                            .foregroundColor(AppColors.saffron)
+                        Image("emblem")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 64, height: 64)
+                            .clipShape(Circle())
                     }
                     
                     // Content
                     VStack(alignment: .leading, spacing: 4) {
                         Text(preamble.title.uppercased())
-                            .font(.title3)
-                            .fontWeight(.bold)
+                            .font(.timesNewRoman(size: 16, weight: .bold))
                             .foregroundColor(AppColors.primaryNavy)
                         
                         Text("The Soul of the Constitution")

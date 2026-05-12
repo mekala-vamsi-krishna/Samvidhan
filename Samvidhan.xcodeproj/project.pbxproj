@@ -36,6 +36,7 @@
 		AC7E97322FB37433000359D8 /* ClauseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E97312FB37433000359D8 /* ClauseCard.swift */; };
 		AC7E97342FB374D9000359D8 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E97332FB374D9000359D8 /* ShareSheet.swift */; };
 		AC7E97362FB39794000359D8 /* PreambleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E97352FB39794000359D8 /* PreambleDetailView.swift */; };
+		AC7E97382FB3AFA2000359D8 /* Font+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E97372FB3AFA2000359D8 /* Font+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		AC7E97312FB37433000359D8 /* ClauseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClauseCard.swift; sourceTree = "<group>"; };
 		AC7E97332FB374D9000359D8 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
 		AC7E97352FB39794000359D8 /* PreambleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreambleDetailView.swift; sourceTree = "<group>"; };
+		AC7E97372FB3AFA2000359D8 /* Font+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			children = (
 				AC097C922FAFB2FC00F6DA71 /* Color+Ext.swift */,
 				AC097CA62FAFB31900F6DA71 /* CornerRadius+Ext.swift */,
+				AC7E97372FB3AFA2000359D8 /* Font+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				AC097C9E2FAFB2FC00F6DA71 /* BookmarksView.swift in Sources */,
 				AC7E97342FB374D9000359D8 /* ShareSheet.swift in Sources */,
 				AC097CAC2FAFB44600F6DA71 /* PartCard.swift in Sources */,
+				AC7E97382FB3AFA2000359D8 /* Font+Ext.swift in Sources */,
 				AC097CBC2FAFBED800F6DA71 /* ConstitutionViewModel.swift in Sources */,
 				AC097CC32FB078FB00F6DA71 /* SearchViewModel.swift in Sources */,
 				AC097CC12FB076A200F6DA71 /* SearchView.swift in Sources */,
