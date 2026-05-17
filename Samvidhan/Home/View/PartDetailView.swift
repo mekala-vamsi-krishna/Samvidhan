@@ -135,6 +135,22 @@ private extension PartDetailView {
 struct ArticleRowView: View {
     let article: Article
     
+    private var articleNumberFontSize: CGFloat {
+        let length = article.articleNumber.count
+        switch length {
+        case 1...2:
+            return 22
+        case 3:
+            return 18
+        case 4:
+            return 16
+        case 5:
+            return 14
+        default:
+            return 12
+        }
+    }
+    
     var body: some View {
         HStack(spacing: 16) {
             
@@ -145,9 +161,13 @@ struct ArticleRowView: View {
                     .frame(width: 54, height: 54)
                 
                 Text(article.articleNumber)
-                    .font(.timesNewRoman(size: 22, weight: .heavy))
+                    .font(.timesNewRoman(size: articleNumberFontSize, weight: .heavy))
                     .foregroundColor(AppColors.saffron)
+                    .minimumScaleFactor(0.5)
+                    .lineLimit(1)
+                    .padding(.horizontal, 4)
             }
+            .frame(width: 54, height: 54)
             
             // MARK: - Title + Subtitle
             VStack(alignment: .leading, spacing: 4) {
@@ -160,6 +180,7 @@ struct ArticleRowView: View {
                     .font(.system(size: 14))
                     .foregroundColor(AppColors.secondaryText)
                     .lineLimit(2)
+                    .multilineTextAlignment(.leading)
             }
             
             Spacer()
@@ -169,8 +190,6 @@ struct ArticleRowView: View {
                 .font(.system(size: 14, weight: .medium))
                 .foregroundColor(Color.gray.opacity(0.5))
         }
-        .navigationTitle("Articles")
-        .navigationBarTitleDisplayMode(.inline)
         .padding(.horizontal, 12)
         .padding(.vertical, 8)
         .background(

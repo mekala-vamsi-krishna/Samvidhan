@@ -19,8 +19,10 @@ struct ArticleDetailView: View {
     @State private var selectedProvisoForDetail: Proviso?
     @State private var selectedProvisoIndex: Int = 0
     @State private var selectedExplanationForDetail: Explanation?
+    @State private var selectedDescriptionForDetail: Description?
     @State private var transitionDirection: TransitionDirection = .forward
     @State private var currentArticle: Article
+    @State private var isDescriptionTruncated = false
     
     enum TransitionDirection {
         case forward
@@ -50,31 +52,24 @@ struct ArticleDetailView: View {
     
     var body: some View {
         ZStack {
-            // Main Content with Transition Animation
             ScrollView {
                 VStack(alignment: .leading, spacing: 24) {
-                    // Header Section
                     headerView
-                    
-                    // Article Text Box
                     articleTitleBoxView
+                    descriptionBoxView
                     
-                    // Clauses Section
                     if let clauses = currentArticle.clauses, !clauses.isEmpty {
                         clausesSection(clauses: clauses)
                     }
                     
-                    // Provisos Section
                     if let provisos = currentArticle.provisos, !provisos.isEmpty {
                         provisosSection(provisos: provisos)
                     }
                     
-                    // Explanations Section
                     if let explanations = currentArticle.explanations, !explanations.isEmpty {
                         explanationsSection(explanations: explanations)
                     }
                     
-                    // Navigation Buttons
                     if !allArticles.isEmpty {
                         navigationButtons
                     }
@@ -82,7 +77,7 @@ struct ArticleDetailView: View {
                 .padding(20)
             }
             .background(AppColors.pureWhite)
-            .id(currentArticle.articleId) // Force view refresh on article change
+            .id(currentArticle.articleId)
             .transition(
                 .asymmetric(
                     insertion: .move(edge: transitionDirection == .forward ? .trailing : .leading)
@@ -110,21 +105,20 @@ struct ArticleDetailView: View {
         .sheet(item: $selectedClauseForDetail) { clause in
             ClauseDetailSheet(clause: clause)
         }
-        .sheet(item: $selectedClauseForDetail) { clause in
-            ClauseDetailSheet(clause: clause)
-        }
         .sheet(item: $selectedProvisoForDetail) { proviso in
             ProvisoDetailSheet(proviso: proviso, index: selectedProvisoIndex)
         }
-
         .sheet(item: $selectedExplanationForDetail) { explanation in
             ExplanationDetailSheet(explanation: explanation)
         }
+        .sheet(item: $selectedDescriptionForDetail) { description in
+            DescriptionDetailSheet(description: description.text, title: description.title)
+        }
         .onChange(of: article.articleId) { newId in
-            // Update current article when the parent updates the article
             if currentArticle.articleId != newId {
                 withAnimation(.easeInOut(duration: 0.3)) {
                     currentArticle = allArticles.first(where: { $0.articleId == newId }) ?? article
+                    isDescriptionTruncated = false
                 }
             }
         }
@@ -166,6 +160,74 @@ struct ArticleDetailView: View {
                     .foregroundColor(AppColors.primaryText)
                     .fixedSize(horizontal: false, vertical: true)
                     .frame(maxWidth: .infinity, alignment: .leading)
+            }
+            .padding(16)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(Color.white)
+                    .shadow(color: Color.black.opacity(0.06), radius: 4, x: 0, y: 1)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 12)
+                            .stroke(Color.gray.opacity(0.15), lineWidth: 1)
+                    )
+            )
+        }
+    }
+    
+    // MARK: - Description Box View with See More
+    private var descriptionBoxView: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("Description")
+                .font(.timesNewRoman(size: 22, weight: .semibold))
+                .foregroundColor(AppColors.primaryNavy)
+            
+            VStack(alignment: .leading, spacing: 8) {
+                // Description Text with line limit (like ClauseCard)
+                Text(currentArticle.description)
+                    .font(.body)
+                    .foregroundColor(AppColors.primaryText)
+                    .lineSpacing(4)
+                    .lineLimit(3) // Always limit to 3 lines initially
+                    .background(
+                        GeometryReader { geometry in
+                            Color.clear
+                                .onAppear {
+                                    // Calculate if text exceeds 3 lines
+                                    let font = UIFont.systemFont(ofSize: 17)
+                                    let textWidth = geometry.size.width
+                                    let textHeight = (currentArticle.description as NSString).boundingRect(
+                                        with: CGSize(width: textWidth, height: .greatestFiniteMagnitude),
+                                        options: .usesLineFragmentOrigin,
+                                        attributes: [.font: font],
+                                        context: nil
+                                    ).height
+                                    
+                                    let lineHeight = font.lineHeight
+                                    let totalLines = Int(ceil(textHeight / lineHeight))
+                                    
+                                    DispatchQueue.main.async {
+                                        isDescriptionTruncated = totalLines > 3
+                                    }
+                                }
+                        }
+                    )
+                
+                // See More Button (only shows when text is truncated)
+                if isDescriptionTruncated {
+                    Button(action: {
+                        selectedDescriptionForDetail = Description(
+                            text: currentArticle.description,
+                            title: currentArticle.title
+                        )
+                    }) {
+                        Text("See full description")
+                            .font(.subheadline)
+                            .fontWeight(.medium)
+                            .foregroundColor(AppColors.saffron)
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                }
             }
             .padding(16)
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -255,10 +317,7 @@ struct ArticleDetailView: View {
                 .padding(.vertical, 8)
             
             HStack(spacing: 20) {
-                // Previous Button
-                Button(action: {
-                    navigateToPrevious()
-                }) {
+                Button(action: navigateToPrevious) {
                     HStack {
                         Image(systemName: "chevron.left")
                         Text("Previous")
@@ -271,10 +330,7 @@ struct ArticleDetailView: View {
                 }
                 .disabled(previousArticle == nil)
                 
-                // Next Button
-                Button(action: {
-                    navigateToNext()
-                }) {
+                Button(action: navigateToNext) {
                     HStack {
                         Text("Next")
                         Image(systemName: "chevron.right")
@@ -288,7 +344,6 @@ struct ArticleDetailView: View {
                 .disabled(nextArticle == nil)
             }
             
-            // Article counter
             if let index = currentIndex {
                 Text("Article \(index + 1) of \(allArticles.count)")
                     .font(.caption)
@@ -304,7 +359,8 @@ struct ArticleDetailView: View {
         withAnimation(.easeInOut(duration: 0.3)) {
             transitionDirection = .backward
             currentArticle = previous
-            expandedClauses.removeAll() // Reset expanded clauses
+            expandedClauses.removeAll()
+            isDescriptionTruncated = false
             onNavigate?(previous)
         }
     }
@@ -315,7 +371,8 @@ struct ArticleDetailView: View {
         withAnimation(.easeInOut(duration: 0.3)) {
             transitionDirection = .forward
             currentArticle = next
-            expandedClauses.removeAll() // Reset expanded clauses
+            expandedClauses.removeAll()
+            isDescriptionTruncated = false
             onNavigate?(next)
         }
     }

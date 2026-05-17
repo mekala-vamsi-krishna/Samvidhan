@@ -49,6 +49,7 @@
 		AC7E97342FB374D9000359D8 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E97332FB374D9000359D8 /* ShareSheet.swift */; };
 		AC7E97362FB39794000359D8 /* PreambleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E97352FB39794000359D8 /* PreambleDetailView.swift */; };
 		AC7E97382FB3AFA2000359D8 /* Font+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E97372FB3AFA2000359D8 /* Font+Ext.swift */; };
+		ACA4C24B2FB9B3D000B06DEF /* DescriptionDetailSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA4C24A2FB9B3D000B06DEF /* DescriptionDetailSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +96,7 @@
 		AC7E97332FB374D9000359D8 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
 		AC7E97352FB39794000359D8 /* PreambleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreambleDetailView.swift; sourceTree = "<group>"; };
 		AC7E97372FB3AFA2000359D8 /* Font+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Ext.swift"; sourceTree = "<group>"; };
+		ACA4C24A2FB9B3D000B06DEF /* DescriptionDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionDetailSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 				AC097CB42FAFB4F700F6DA71 /* PartDetailView.swift */,
 				AC097CB02FAFB4AD00F6DA71 /* AllPartsView.swift */,
 				AC097CB22FAFB4D600F6DA71 /* ArticleDetailView.swift */,
+				ACA4C24A2FB9B3D000B06DEF /* DescriptionDetailSheet.swift */,
 				AC7E97312FB37433000359D8 /* ClauseCard.swift */,
 				AC7E97232FB37377000359D8 /* ClauseDetailSheet.swift */,
 				AC7E972F2FB37424000359D8 /* SubClauseItem.swift */,
@@ -357,6 +360,7 @@
 				AC4B40CD2FB4B0F2008FAAAA /* TextSizePickerSheet.swift in Sources */,
 				AC4B40C92FB4B0CB008FAAAA /* SettingsInfoRow.swift in Sources */,
 				AC4B40C12FB4AE69008FAAAA /* SettingsViewModel.swift in Sources */,
+				ACA4C24B2FB9B3D000B06DEF /* DescriptionDetailSheet.swift in Sources */,
 				AC4B40D52FB4B136008FAAAA /* LanguagePickerSheet.swift in Sources */,
 				AC4B40D72FB4B149008FAAAA /* AboutView.swift in Sources */,
 				AC097CA32FAFB2FC00F6DA71 /* RecentsView.swift in Sources */,

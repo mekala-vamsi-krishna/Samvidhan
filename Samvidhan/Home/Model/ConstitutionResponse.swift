@@ -97,3 +97,10 @@ struct Explanation: Codable, Identifiable {
         case explanationNumber, text
     }
 }
+
+// MARK: - Description
+struct Description: Codable, Identifiable {
+    let id = UUID()
+    let text: String
+    let title: String
+}
