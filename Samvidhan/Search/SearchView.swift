@@ -118,7 +118,7 @@ struct ArticleSearchCard: View {
                 }
                 .padding(16)
             }
-            .background(AppColors.pureWhite)
+            .background(AppColors.background)
             .cornerRadius(12)
             .overlay(
                 RoundedRectangle(cornerRadius: 12)

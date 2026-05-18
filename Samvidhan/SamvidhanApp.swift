@@ -9,7 +9,8 @@ import SwiftUI
 
 @main
 struct SamvidhanApp: App {
-    
+    @StateObject private var themeManager = ThemeManager.shared
+
     init() {
         let appearance = UITabBarAppearance()
         appearance.configureWithOpaqueBackground()
@@ -22,6 +23,8 @@ struct SamvidhanApp: App {
     var body: some Scene {
         WindowGroup {
             MainTabView()
+                .environmentObject(themeManager)
+                .background(AppColors.background)
         }
     }
 }

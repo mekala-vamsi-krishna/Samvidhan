@@ -6,9 +6,10 @@
 //
 
 import SwiftUI
+import Combine
 
 struct MainTabView: View {
-    
+    @StateObject private var themeManager = ThemeManager.shared
     @State private var selectedTab: AppTab = .home
     
     var body: some View {
@@ -55,7 +56,12 @@ struct MainTabView: View {
                 }
             }
         }
+        .background(AppColors.background)
         .tint(AppColors.saffron)
+        .onAppear {
+            // theme is applied on app start
+            themeManager.objectWillChange.send()
+        }
     }
 }
 

@@ -27,7 +27,7 @@ struct SettingsView: View {
                                 value: viewModel.selectedTheme.displayName,
                                 action: { viewModel.showThemePicker = true }
                             )
-                            
+                            SettingsDivider()
                             SettingsRow(
                                 icon: "textformat.size",
                                 title: "Text Size",
@@ -35,7 +35,7 @@ struct SettingsView: View {
                                 value: viewModel.textSize.displayName,
                                 action: { viewModel.showTextSizePicker = true }
                             )
-                            
+                            SettingsDivider()
                             SettingsRow(
                                 icon: "character.text.justify",
                                 title: "Font Style",
@@ -43,7 +43,7 @@ struct SettingsView: View {
                                 value: viewModel.fontStyle.displayName,
                                 action: { viewModel.showFontPicker = true }
                             )
-                            
+                            SettingsDivider()
                             SettingsRow(
                                 icon: "line.3.horizontal",
                                 title: "Line Spacing",
@@ -64,14 +64,14 @@ struct SettingsView: View {
                                 value: viewModel.highlightColor.displayName,
                                 action: { viewModel.showHighlightColorPicker = true }
                             )
-                            
+                            SettingsDivider()
                             SettingsRow(
                                 icon: "bookmark.fill",
                                 title: "Bookmarks",
                                 subtitle: "View saved articles",
                                 action: { viewModel.navigateToBookmarks = true }
                             )
-                            
+                            SettingsDivider()
                             SettingsRow(
                                 icon: "clock.arrow.circlepath",
                                 title: "Reading History",
@@ -90,7 +90,7 @@ struct SettingsView: View {
                                 subtitle: "Access constitution without internet",
                                 isOn: $viewModel.isOfflineDownloadEnabled
                             )
-                            
+                            SettingsDivider()
                             SettingsRow(
                                 icon: "trash.fill",
                                 title: "Clear Cache",
@@ -98,7 +98,7 @@ struct SettingsView: View {
                                 value: viewModel.cacheSize,
                                 action: { showingClearCacheConfirmation = true }
                             )
-                            
+                            SettingsDivider()
                             SettingsInfoRow(
                                 icon: "internaldrive.fill",
                                 title: "Storage Usage",
@@ -118,21 +118,21 @@ struct SettingsView: View {
                                 value: viewModel.currentLanguage.displayName,
                                 action: { showingLanguageSheet = true }
                             )
-                            
+                            SettingsDivider()
                             SettingsRow(
                                 icon: "star.fill",
                                 title: "Rate Us",
                                 subtitle: "Rate this app on App Store",
                                 action: { viewModel.rateApp() }
                             )
-                            
+                            SettingsDivider()
                             SettingsRow(
                                 icon: "square.and.arrow.up",
                                 title: "Share App",
                                 subtitle: "Share with friends and family",
                                 action: { viewModel.shareApp() }
                             )
-                            
+                            SettingsDivider()
                             SettingsRow(
                                 icon: "info.circle.fill",
                                 title: "About",
@@ -158,7 +158,7 @@ struct SettingsView: View {
                 .padding(.horizontal, 16)
                 .padding(.vertical, 20)
             }
-            .background(AppColors.pureWhite)
+            .background(AppColors.background)
             .navigationTitle("Settings")
             .navigationSubtitle("Customize your app experience")
             .navigationBarTitleDisplayMode(.large)

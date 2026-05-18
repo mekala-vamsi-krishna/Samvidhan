@@ -10,6 +10,21 @@ import SwiftUI
 struct HomeView: View {
     @StateObject private var viewModel = ConstitutionViewModel()
     @State private var isLogoAnimating = false
+    @ObservedObject private var themeManager = ThemeManager.shared
+    
+    // Dynamic logo based on theme
+    private var logoImageName: String {
+        let theme = themeManager.currentTheme
+        switch theme {
+        case .light:
+            return "logo"
+        case .dark:
+            return "logo-dark"
+        case .system:
+            // Follow system appearance
+            return UITraitCollection.current.userInterfaceStyle == .dark ? "logo-dark" : "logo"
+        }
+    }
     
     var body: some View {
         NavigationStack {
@@ -37,7 +52,7 @@ struct HomeView: View {
                 .padding(.horizontal, 16)
                 .padding(.vertical, 12)
             }
-            .background(AppColors.pureWhite)
+            .background(AppColors.background)
             .navigationBarHidden(true)
         }
         .onAppear {
@@ -46,15 +61,27 @@ struct HomeView: View {
                 isLogoAnimating = true
             }
         }
+        .onReceive(themeManager.$currentTheme) { _ in
+            // Force view update when theme changes
+            isLogoAnimating = false
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                withAnimation(.easeInOut(duration: 0.3)) {
+                    isLogoAnimating = true
+                }
+            }
+        }
     }
     
-    // MARK: - Logo Section (Normal display - not circular)
+    // MARK: - Logo Section with Theme Support
     private var logoSection: some View {
         VStack(spacing: 12) {
-            Image("logo")
+            Image(logoImageName)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 200, height: 150)
+                .scaleEffect(isLogoAnimating ? 1.0 : 0.9)
+                .opacity(isLogoAnimating ? 1.0 : 0.0)
+                .animation(.easeOut(duration: 0.5), value: isLogoAnimating)
         }
     }
 }
@@ -113,7 +140,7 @@ struct ErrorView: View {
                 .padding(.horizontal, 24)
                 .padding(.vertical, 12)
                 .background(AppColors.saffron)
-                .foregroundColor(.white)
+                .foregroundColor(AppColors.cardBackground)
                 .cornerRadius(10)
             }
         }

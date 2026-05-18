@@ -18,19 +18,19 @@ struct SettingsInfoRow: View {
             // Icon Circle
             ZStack {
                 Circle()
-                    .fill(AppColors.primaryNavy.opacity(0.12))
+                    .fill(AppColors.iconBackground)
                     .frame(width: 40, height: 40)
                 
                 Image(systemName: icon)
                     .font(.system(size: 18))
-                    .foregroundColor(AppColors.primaryNavy)
+                    .foregroundColor(AppColors.iconTint)
             }
             
             // Text Content
             VStack(alignment: .leading, spacing: 4) {
                 Text(title)
                     .font(.system(size: 16, weight: .medium))
-                    .foregroundColor(AppColors.primaryNavy)
+                    .foregroundColor(AppColors.primaryText)
                 
                 if let subtitle = subtitle {
                     Text(subtitle)
@@ -44,10 +44,18 @@ struct SettingsInfoRow: View {
             Text(value)
                 .font(.subheadline)
                 .fontWeight(.semibold)
-                .foregroundColor(AppColors.primaryNavy.opacity(0.8))
+                .foregroundColor(AppColors.iconTint)
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 12)
-        .background(Color.white)
+    }
+}
+
+struct SettingsDivider: View {
+    var body: some View {
+        Rectangle()
+            .fill(AppColors.cardBorder)
+            .frame(height: 1)
+            .padding(.leading, 68)
     }
 }

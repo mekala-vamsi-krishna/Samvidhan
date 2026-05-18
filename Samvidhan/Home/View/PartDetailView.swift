@@ -24,7 +24,7 @@ struct PartDetailView: View {
             .padding(.top, 16)
             .padding(.bottom, 30)
         }
-        .background(AppColors.pureWhite.ignoresSafeArea())
+        .background(AppColors.background.ignoresSafeArea())
         .navigationBarTitleDisplayMode(.inline)
     }
 }
@@ -59,7 +59,7 @@ private extension PartDetailView {
                     
                     Text("Part \(part.partNumber) – \(part.partTitle)")
                         .font(.timesNewRoman(size: 22, weight: .bold))
-                        .foregroundColor(AppColors.primaryNavy)
+                        .foregroundColor(AppColors.primaryText)
                     
                     HStack(spacing: 20) {
                         
@@ -75,7 +75,7 @@ private extension PartDetailView {
             }
             .padding(20)
         }
-        .background(AppColors.cream)
+        .background(AppColors.cardBackground)
         .cornerRadius(18)
         .overlay(
             RoundedRectangle(cornerRadius: 18)
@@ -94,7 +94,7 @@ private extension PartDetailView {
             HStack {
                 Text("Articles")
                     .font(.timesNewRoman(size: 22, weight: .bold))
-                    .foregroundColor(AppColors.primaryNavy)
+                    .foregroundColor(AppColors.primaryText)
                 
                 Spacer()
                 
@@ -174,7 +174,7 @@ struct ArticleRowView: View {
                 
                 Text("Article \(article.articleNumber)")
                     .font(.timesNewRoman(size: 16, weight: .semibold))
-                    .foregroundColor(AppColors.primaryNavy)
+                    .foregroundColor(AppColors.primaryText)
                 
                 Text(article.title)
                     .font(.system(size: 14))
@@ -194,7 +194,7 @@ struct ArticleRowView: View {
         .padding(.vertical, 8)
         .background(
             RoundedRectangle(cornerRadius: 12)
-                .fill(Color.white)
+                .fill(AppColors.cardBorder)
                 .shadow(color: Color.black.opacity(0.04), radius: 3, x: 0, y: 1)
                 .overlay(
                     RoundedRectangle(cornerRadius: 12)

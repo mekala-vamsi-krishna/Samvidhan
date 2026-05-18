@@ -28,19 +28,19 @@ struct SettingsRow: View {
                 // Icon Circle
                 ZStack {
                     Circle()
-                        .fill(AppColors.primaryNavy.opacity(0.12))
+                        .fill(AppColors.iconBackground)
                         .frame(width: 40, height: 40)
                     
                     Image(systemName: icon)
                         .font(.system(size: 18))
-                        .foregroundColor(AppColors.primaryNavy)
+                        .foregroundColor(AppColors.iconTint)
                 }
                 
                 // Text Content
                 VStack(alignment: .leading, spacing: 4) {
                     Text(title)
                         .font(.system(size: 16, weight: .medium))
-                        .foregroundColor(AppColors.primaryNavy)
+                        .foregroundColor(AppColors.primaryText)
                     
                     if let subtitle = subtitle {
                         Text(subtitle)
@@ -56,17 +56,16 @@ struct SettingsRow: View {
                     Text(value)
                         .font(.subheadline)
                         .fontWeight(.semibold)
-                        .foregroundColor(AppColors.primaryNavy.opacity(0.8))
+                        .foregroundColor(AppColors.iconTint)
                         .padding(.horizontal, 8)
                 }
                 
                 Image(systemName: "chevron.right")
                     .font(.system(size: 14, weight: .semibold))
-                    .foregroundColor(AppColors.secondaryText.opacity(0.5))
+                    .foregroundColor(AppColors.secondaryText.opacity(0.6))
             }
             .padding(.horizontal, 16)
             .padding(.vertical, 12)
-            .background(Color.white)
         }
         .buttonStyle(PlainButtonStyle())
     }

@@ -30,7 +30,7 @@ struct ClauseDetailSheet: View {
                         
                         Text("Clause")
                             .font(.timesNewRoman(size: 22, weight: .semibold))
-                            .foregroundColor(AppColors.primaryNavy)
+                            .foregroundColor(AppColors.primaryText)
                     }
                     .padding(.bottom, 8)
                     
@@ -58,7 +58,7 @@ struct ClauseDetailSheet: View {
                                 Text("Sub-clauses")
                                     .font(.title3)
                                     .fontWeight(.semibold)
-                                    .foregroundColor(AppColors.primaryNavy)
+                                    .foregroundColor(AppColors.primaryText)
                             }
                             
                             VStack(alignment: .leading, spacing: 20) {
@@ -92,7 +92,7 @@ struct ClauseDetailSheet: View {
                 }
                 .padding(20)
             }
-            .background(AppColors.pureWhite)
+            .background(AppColors.background)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {

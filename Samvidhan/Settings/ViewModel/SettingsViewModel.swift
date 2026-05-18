@@ -27,12 +27,33 @@ class SettingsViewModel: ObservableObject {
     @Published var navigateToBookmarks = false
     @Published var navigateToHistory = false
     
-    // Computed Properties
+    // Cancellables for debouncing
+    private var cancellables = Set<AnyCancellable>()
+    
+    init() {
+        // Sync with ThemeManager on initialization
+        selectedTheme = ThemeManager.shared.currentTheme
+        
+        // Use debounce to avoid publishing changes during view updates
+        $selectedTheme
+            .dropFirst() // Skip initial value
+            .debounce(for: .milliseconds(50), scheduler: DispatchQueue.main)
+            .sink { [weak self] newTheme in
+                guard let self = self else { return }
+                // Update ThemeManager without causing circular updates
+                if ThemeManager.shared.currentTheme != newTheme {
+                    DispatchQueue.main.async {
+                        ThemeManager.shared.currentTheme = newTheme
+                    }
+                }
+            }
+            .store(in: &cancellables)
+    }
+    
+    // MARK: - Computed Properties
     var cacheSize: String {
-        // Calculate actual cache size
         let cacheURL = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first
-        guard let directory = cacheURL else { return "0 MB"
-        }
+        guard let directory = cacheURL else { return "0 MB" }
         
         do {
             let contents = try FileManager.default.contentsOfDirectory(at: directory, includingPropertiesForKeys: [.fileSizeKey])
@@ -47,7 +68,6 @@ class SettingsViewModel: ObservableObject {
     }
     
     var totalStorageUsed: String {
-        // Calculate app storage usage
         let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
         guard let directory = documentsURL else { return "0 MB" }
         
@@ -199,14 +219,14 @@ enum HighlightColorOption: String, CaseIterable, Identifiable {
 }
 
 enum LanguageOption: String, CaseIterable, Identifiable {
-    case english, hindi, sanskrit
+    case english, hindi, telugu
     var id: String { rawValue }
     
     var displayName: String {
         switch self {
         case .english: return "English"
         case .hindi: return "हिन्दी (Hindi)"
-        case .sanskrit: return "संस्कृतम् (Sanskrit)"
+        case .telugu: return "తెలుగు (Telugu)"
         }
     }
 }

@@ -20,7 +20,7 @@ struct PartsSection: View {
             HStack {
                 Text("Constitution Parts")
                     .font(.timesNewRoman(size: 22, weight: .bold))
-                    .foregroundColor(AppColors.primaryNavy)
+                    .foregroundColor(AppColors.primaryText)
                 
                 Spacer()
                 

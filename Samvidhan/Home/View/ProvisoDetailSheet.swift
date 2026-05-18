@@ -30,7 +30,7 @@ struct ProvisoDetailSheet: View {
                         
                         Text("Proviso")
                             .font(.timesNewRoman(size: 22, weight: .semibold))
-                            .foregroundColor(AppColors.primaryNavy)
+                            .foregroundColor(AppColors.primaryText)
                     }
                     .padding(.bottom, 8)
                     
@@ -48,7 +48,7 @@ struct ProvisoDetailSheet: View {
                 }
                 .padding(20)
             }
-            .background(AppColors.pureWhite)
+            .background(AppColors.background)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {

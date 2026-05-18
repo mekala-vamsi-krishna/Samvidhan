@@ -26,7 +26,7 @@ struct PreambleCard: View {
                     ZStack {
                         Circle()
                             .stroke(AppColors.saffron, lineWidth: 1.5)
-                            .fill(Color.white)
+                            .fill(AppColors.cardBorder)
                             .frame(width: 64, height: 64)
                         
                         Image("emblem")
@@ -40,7 +40,7 @@ struct PreambleCard: View {
                     VStack(alignment: .leading, spacing: 4) {
                         Text(preamble.title.uppercased())
                             .font(.timesNewRoman(size: 16, weight: .bold))
-                            .foregroundColor(AppColors.primaryNavy)
+                            .foregroundColor(AppColors.primaryText)
                         
                         Text("The Soul of the Constitution")
                             .font(.caption)
@@ -52,12 +52,12 @@ struct PreambleCard: View {
                     // Arrow Indicator
                     Image(systemName: "chevron.right")
                         .font(.system(size: 14, weight: .semibold))
-                        .foregroundColor(AppColors.primaryNavy)
+                        .foregroundColor(Color.gray)
                 }
                 .padding(.vertical, 12)
                 .padding(.horizontal, 12)
             }
-            .background(AppColors.cream)
+            .background(AppColors.cardBackground)
             .cornerRadius(12)
             .overlay(
                 RoundedRectangle(cornerRadius: 12)

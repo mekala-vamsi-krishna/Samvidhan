@@ -18,19 +18,19 @@ struct SettingsToggleRow: View {
             // Icon Circle
             ZStack {
                 Circle()
-                    .fill(AppColors.primaryNavy.opacity(0.12))
+                    .fill(AppColors.iconBackground)
                     .frame(width: 40, height: 40)
                 
                 Image(systemName: icon)
                     .font(.system(size: 18))
-                    .foregroundColor(AppColors.primaryNavy)
+                    .foregroundColor(AppColors.iconTint)
             }
             
             // Text Content
             VStack(alignment: .leading, spacing: 4) {
                 Text(title)
                     .font(.system(size: 16, weight: .medium))
-                    .foregroundColor(AppColors.primaryNavy)
+                    .foregroundColor(AppColors.primaryText)
                 
                 if let subtitle = subtitle {
                     Text(subtitle)
@@ -43,11 +43,10 @@ struct SettingsToggleRow: View {
             
             // Toggle Switch
             Toggle("", isOn: $isOn)
-                .toggleStyle(SwitchToggleStyle(tint: AppColors.primaryNavy))
+                .toggleStyle(SwitchToggleStyle(tint: AppColors.saffron))
                 .labelsHidden()
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 12)
-        .background(Color.white)
     }
 }

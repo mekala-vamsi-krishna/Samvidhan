@@ -76,7 +76,7 @@ struct ArticleDetailView: View {
                 }
                 .padding(20)
             }
-            .background(AppColors.pureWhite)
+            .background(AppColors.background)
             .id(currentArticle.articleId)
             .transition(
                 .asymmetric(
@@ -130,7 +130,7 @@ struct ArticleDetailView: View {
             if !currentArticle.articleNumber.isEmpty {
                 Text("Article \(currentArticle.articleNumber)")
                     .font(.timesNewRoman(size: 32, weight: .semibold))
-                    .foregroundColor(AppColors.primaryNavy)
+                    .foregroundColor(AppColors.primaryText)
             }
             
             Rectangle()
@@ -146,7 +146,7 @@ struct ArticleDetailView: View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Article Text")
                 .font(.timesNewRoman(size: 22, weight: .semibold))
-                .foregroundColor(AppColors.primaryNavy)
+                .foregroundColor(AppColors.primaryText)
             
             HStack(alignment: .top, spacing: 12) {
                 Rectangle()
@@ -165,7 +165,7 @@ struct ArticleDetailView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .background(
                 RoundedRectangle(cornerRadius: 12)
-                    .fill(Color.white)
+                    .fill(AppColors.cardBorder)
                     .shadow(color: Color.black.opacity(0.06), radius: 4, x: 0, y: 1)
                     .overlay(
                         RoundedRectangle(cornerRadius: 12)
@@ -180,7 +180,7 @@ struct ArticleDetailView: View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Description")
                 .font(.timesNewRoman(size: 22, weight: .semibold))
-                .foregroundColor(AppColors.primaryNavy)
+                .foregroundColor(AppColors.primaryText)
             
             VStack(alignment: .leading, spacing: 8) {
                 // Description Text with line limit (like ClauseCard)
@@ -233,7 +233,7 @@ struct ArticleDetailView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .background(
                 RoundedRectangle(cornerRadius: 12)
-                    .fill(Color.white)
+                    .fill(AppColors.cardBorder)
                     .shadow(color: Color.black.opacity(0.06), radius: 4, x: 0, y: 1)
                     .overlay(
                         RoundedRectangle(cornerRadius: 12)
@@ -249,7 +249,7 @@ struct ArticleDetailView: View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Clauses")
                 .font(.timesNewRoman(size: 22, weight: .semibold))
-                .foregroundColor(AppColors.primaryNavy)
+                .foregroundColor(AppColors.primaryText)
             
             VStack(spacing: 12) {
                 ForEach(clauses) { clause in
@@ -273,7 +273,7 @@ struct ArticleDetailView: View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Provisos")
                 .font(.timesNewRoman(size: 22, weight: .semibold))
-                .foregroundColor(AppColors.primaryNavy)
+                .foregroundColor(AppColors.primaryText)
             
             VStack(spacing: 12) {
                 ForEach(Array(provisos.enumerated()), id: \.offset) { index, proviso in
@@ -295,7 +295,7 @@ struct ArticleDetailView: View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Explanations")
                 .font(.timesNewRoman(size: 22, weight: .semibold))
-                .foregroundColor(AppColors.primaryNavy)
+                .foregroundColor(AppColors.primaryText)
             
             VStack(spacing: 12) {
                 ForEach(explanations) { explanation in
@@ -325,7 +325,7 @@ struct ArticleDetailView: View {
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 12)
                     .background(previousArticle != nil ? AppColors.saffron : Color.gray.opacity(0.3))
-                    .foregroundColor(previousArticle != nil ? .white : .gray)
+                    .foregroundColor(previousArticle != nil ? AppColors.primaryText : .gray)
                     .cornerRadius(10)
                 }
                 .disabled(previousArticle == nil)
@@ -338,7 +338,7 @@ struct ArticleDetailView: View {
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 12)
                     .background(nextArticle != nil ? AppColors.saffron : Color.gray.opacity(0.3))
-                    .foregroundColor(nextArticle != nil ? .white : .gray)
+                    .foregroundColor(nextArticle != nil ? AppColors.primaryText : .gray)
                     .cornerRadius(10)
                 }
                 .disabled(nextArticle == nil)
@@ -347,7 +347,7 @@ struct ArticleDetailView: View {
             if let index = currentIndex {
                 Text("Article \(index + 1) of \(allArticles.count)")
                     .font(.caption)
-                    .foregroundColor(.gray)
+                    .foregroundColor(AppColors.secondaryText)
             }
         }
     }

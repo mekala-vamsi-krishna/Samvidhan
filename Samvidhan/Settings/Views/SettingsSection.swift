@@ -19,8 +19,8 @@ struct SettingsSection<Content: View>: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             Text(title)
-                .font(.system(size: 18, weight: .bold))
-                .foregroundColor(AppColors.primaryNavy)
+                .font(.system(size: 18, weight: .semibold))
+                .foregroundColor(AppColors.primaryText)
                 .padding(.leading, 4)
             
             VStack(spacing: 0) {
@@ -28,9 +28,19 @@ struct SettingsSection<Content: View>: View {
             }
             .background(
                 RoundedRectangle(cornerRadius: 16)
-                    .fill(Color.white)
-                    .shadow(color: Color.black.opacity(0.04), radius: 6, x: 0, y: 2)
+                    .fill(AppColors.cardBackground)
+                    .shadow(
+                        color: Color.black.opacity(AppColors.isDarkMode ? 0.2 : 0.04),
+                        radius: AppColors.isDarkMode ? 8 : 6,
+                        x: 0,
+                        y: AppColors.isDarkMode ? 4 : 2
+                    )
+            )
+            .overlay(
+                RoundedRectangle(cornerRadius: 16)
+                    .stroke(AppColors.cardBorder, lineWidth: 1)
             )
         }
     }
 }
+

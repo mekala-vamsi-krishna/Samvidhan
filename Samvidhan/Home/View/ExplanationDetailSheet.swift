@@ -30,7 +30,7 @@ struct ExplanationDetailSheet: View {
                         VStack(alignment: .leading, spacing: 4) {
                             Text("Explanation \(explanation.explanationNumber)")
                                 .font(.timesNewRoman(size: 22, weight: .semibold))
-                                .foregroundColor(AppColors.primaryNavy)
+                                .foregroundColor(AppColors.primaryText)
                         }
                     }
                     .padding(.bottom, 8)
@@ -49,7 +49,7 @@ struct ExplanationDetailSheet: View {
                 }
                 .padding(20)
             }
-            .background(AppColors.pureWhite)
+            .background(AppColors.background)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {

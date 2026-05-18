@@ -64,7 +64,7 @@ struct PreambleDetailView: View {
                 .padding(24)
                 .background(
                     RoundedRectangle(cornerRadius: 20)
-                        .fill(Color.white)
+                        .fill(AppColors.cardBackground)
                         .shadow(color: Color.black.opacity(0.05), radius: 10, x: 0, y: 3)
                 )
                 .padding(.horizontal, 20)
@@ -97,7 +97,7 @@ struct PreambleDetailView: View {
                 .padding(.vertical, 24)
             }
         }
-        .background(AppColors.cream)
+        .background(AppColors.background)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
@@ -165,7 +165,7 @@ struct TimelineItem: View {
             VStack(alignment: .leading, spacing: 8) {
                 Text(title)
                     .font(.timesNewRoman(size: 16, weight: .semibold))
-                    .foregroundColor(AppColors.primaryNavy)
+                    .foregroundColor(AppColors.primaryText)
                 
                 Text(date)
                     .font(.subheadline)

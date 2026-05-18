@@ -31,7 +31,7 @@ struct DescriptionDetailSheet: View {
                         VStack(alignment: .leading, spacing: 4) {
                             Text("Full Description")
                                 .font(.timesNewRoman(size: 22, weight: .bold))
-                                .foregroundColor(AppColors.primaryNavy)
+                                .foregroundColor(AppColors.primaryText)
                             
                             Text(title)
                                 .font(.caption)
@@ -114,7 +114,7 @@ struct DescriptionDetailSheet: View {
                 }
                 .padding(20)
             }
-            .background(AppColors.pureWhite)
+            .background(AppColors.background)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {

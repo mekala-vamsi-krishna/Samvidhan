@@ -36,7 +36,7 @@ struct PartCard: View {
                     VStack(alignment: .leading, spacing: 4) {
                         Text(part.partTitle)
                             .font(.timesNewRoman(size: 16, weight: .bold))
-                            .foregroundColor(AppColors.primaryNavy)
+                            .foregroundColor(AppColors.primaryText)
                             .lineLimit(1)
                         
                         Text(part.articleRange)
@@ -49,18 +49,21 @@ struct PartCard: View {
                     // Arrow Indicator
                     Image(systemName: "chevron.right")
                         .font(.system(size: 14, weight: .semibold))
-                        .foregroundColor(AppColors.primaryNavy)
+                        .foregroundColor(Color.gray.opacity(0.5))
                 }
                 .padding(.vertical, 12)
                 .padding(.horizontal, 12)
             }
-            .background(AppColors.pureWhite)
             .cornerRadius(12)
-            .overlay(
+            .background(
                 RoundedRectangle(cornerRadius: 12)
-                    .stroke(Color.gray.opacity(0.08), lineWidth: 1)
+                    .fill(AppColors.cardBorder)
+                    .shadow(color: Color.black.opacity(0.04), radius: 3, x: 0, y: 1)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 12)
+                            .stroke(Color.gray.opacity(0.1), lineWidth: 1)
+                    )
             )
-            .shadow(color: Color.black.opacity(0.04), radius: 4, x: 0, y: 1)
         }
         .buttonStyle(PlainButtonStyle())
     }
